@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width,initial-scale=1"/>
+  <title>HR Buddy · Sign in</title>
+  <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+</head>
+<body>
+  <div class="page">
+    <div class="card">
+      <div class="brand">
+        <div class="logo" aria-hidden="true">🤖</div>
+        <div>
+          <h1>HR Buddy</h1>
+          <p class="muted">Welcome back — sign in with your employee email</p>
+        </div>
+      </div>
+
+      <form id="loginForm" class="form" onsubmit="return false;">
+        <label>Email</label>
+        <input id="email" type="email" placeholder="Employee Email ID" autocomplete="username" required/>
+
+        <label>Phone Number</label>
+        <div class="password-row">
+          <input id="password" type="password" placeholder="Phone Number" autocomplete="current-password" required/>
+          <button type="button" id="togglePw" aria-label="Show password">👁️</button>
+        </div>
+
+        <div class="row between">
+          <label class="remember"><input type="checkbox" id="remember"/> Remember me</label>
+          <button class="link" type="button" id="healthBtn">System status</button>
+        </div>
+
+        <button class="primary" id="loginBtn">Sign in</button>
+      </form>
+
+      <div id="toast" class="toast" hidden></div>
+
+      <div class="footer">
+        <button id="themeBtn" class="link">Toggle theme</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="{{ url_for('static', filename='login.js') }}"></script>
+</body>
+</html>

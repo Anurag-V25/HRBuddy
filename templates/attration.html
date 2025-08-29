@@ -1,0 +1,118 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <title>HR Attrition Assistant</title>
+  <style>
+    body {margin:0; font-family: "Segoe UI", Arial, sans-serif;}
+    .chat-widget {
+      position: fixed; bottom: 20px; right: 20px;
+      width: 360px; max-height: 80vh;
+      display: flex; flex-direction: column;
+      border-radius: 12px; overflow: hidden;
+      box-shadow: 0 6px 25px rgba(0,0,0,.3);
+      background: #fff;
+    }
+    .chat-header {
+      background: #0056D2; color: #fff;
+      padding: 12px; font-weight: 600; display:flex; align-items:center; justify-content: space-between;
+    }
+    .chat-body {
+      flex: 1; overflow-y: auto;
+      background: #f7f8fa; padding: 12px; display:flex; flex-direction:column; gap:10px;
+    }
+    .msg { max-width: 85%; padding: 10px 14px; border-radius: 12px; font-size: 14px; line-height: 1.4;}
+    .msg.bot { background:#e5e7eb; align-self:flex-start; }
+    .msg.user { background:#0056D2; color:#fff; align-self:flex-end;}
+    .timestamp { font-size: 11px; color:#6b7280; margin-top:2px;}
+    .button-group { display:flex; flex-wrap:wrap; gap:8px; margin-top:4px;}
+    .quick-btn {
+      background:#0056D2; color:#fff; border:none;
+      border-radius: 18px; padding:8px 14px;
+      font-size:13px; cursor:pointer;
+      transition: background .2s;
+    }
+    .quick-btn:hover { background:#0043a6; }
+    .chat-footer {
+      display:flex; align-items:center; gap:6px;
+      padding: 8px; border-top:1px solid #ddd;
+      background:#fff;
+    }
+    .chat-footer input {
+      flex:1; padding:8px 12px; border:1px solid #ccc;
+      border-radius:20px; outline:none; font-size:14px;
+    }
+    .chat-footer button {
+      background:#0056D2; border:none; border-radius:50%;
+      width:36px; height:36px; color:#fff; font-size:16px;
+      cursor:pointer;
+    }
+  </style>
+</head>
+<body>
+  <div class="chat-widget">
+    <div class="chat-header">
+      HR Attrition Assistant
+      <span style="font-size:16px; cursor:pointer;">✕</span>
+    </div>
+    <div id="chatBody" class="chat-body"></div>
+    <div class="chat-footer">
+      <input id="msgInput" type="text" placeholder="Type here..."/>
+      <button id="sendBtn">➤</button>
+    </div>
+  </div>
+
+  <script>
+    const chatBody=document.getElementById("chatBody");
+    const input=document.getElementById("msgInput");
+    const send=document.getElementById("sendBtn");
+    const API_URL="/api/chatbot";
+
+    function addMsg(text,who="bot",buttons=[],time=true){
+      const wrap=document.createElement("div");
+      const msg=document.createElement("div");
+      msg.className="msg "+who;
+      msg.innerHTML=text;
+      wrap.appendChild(msg);
+      if(buttons.length){
+        const group=document.createElement("div");
+        group.className="button-group";
+        buttons.forEach(b=>{
+          const btn=document.createElement("button");
+          btn.className="quick-btn"; btn.textContent=b;
+          btn.onclick=()=>sendMsg(b,false);
+          group.appendChild(btn);
+        });
+        wrap.appendChild(group);
+      }
+      if(time){
+        const t=document.createElement("div");
+        t.className="timestamp";
+        t.textContent=new Date().toLocaleTimeString([], {hour:"2-digit",minute:"2-digit"});
+        wrap.appendChild(t);
+      }
+      chatBody.appendChild(wrap);
+      chatBody.scrollTop=chatBody.scrollHeight;
+    }
+
+    async function sendMsg(text,showUser=true){
+      if(!text) return;
+      if(showUser) addMsg(text,"user",[],true);
+      try{
+        const r=await fetch(API_URL,{
+          method:"POST",headers:{"Content-Type":"application/json"},
+          body:JSON.stringify({message:text,role:"hr"})
+        });
+        const data=await r.json();
+        addMsg(data.message||"", "bot", data.quick_replies||[], true);
+      }catch(e){ addMsg("⚠️ Error contacting server.","bot"); }
+    }
+
+    send.onclick=()=>{sendMsg(input.value.trim(),true); input.value="";}
+    input.addEventListener("keypress",e=>{if(e.key==="Enter"){e.preventDefault();send.click();}});
+    // initial buttons
+    sendMsg("start",false);
+  </script>
+</body>
+</html>

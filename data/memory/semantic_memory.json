@@ -1,0 +1,27 @@
+{
+  "topic_clusters": {
+    "general_inquiry": {
+      "related_intents": [
+        "general_hr"
+      ],
+      "common_follow_ups": [],
+      "user_satisfaction": []
+    },
+    "policy": {
+      "related_intents": [
+        "general_hr"
+      ],
+      "common_follow_ups": [],
+      "user_satisfaction": []
+    },
+    "leave_policy": {
+      "related_intents": [
+        "general_hr"
+      ],
+      "common_follow_ups": [],
+      "user_satisfaction": []
+    }
+  },
+  "query_patterns": {},
+  "user_preferences": {}
+}

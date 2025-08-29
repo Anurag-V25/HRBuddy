@@ -1,0 +1,288 @@
+EmployeeID,MaritalStatus,Gender,EmploymentStatus,JobRole,CareerLevel,PerformanceRating,City,HiringPlatform,PhoneNumber,Email,EducationLevel,ReasonForResignation,DateOfBirth,DateOfJoining,LastAppraisalDate,ResignationDate,YearsOfExperience
+111065,Married,Female,Outsource,Quality Assurance Engineer,Experienced,Excellent,Pune,Indeed,919390621320,saanvi.sule@gmail.com,Postgraduate,Career Change,1/2/1990,23/04/2020,9/19/2021,4/21/2022,15
+106080,Married,Female,FullTime,Product Manager,Experienced,Poor,Pune,Employee Referral,917725799353,vanya.dugar@gmail.com,Graduate,Career Change,7/12/1966,18/10/2018,1/13/2022,3/15/2022,10
+106452,Married,Male,FullTime,Data Analyst,Experienced,Good,Gurgaon,Internshala,916759182862,sahil.date@gmail.com,Postgraduate,Career Change,10/3/1985,13/05/2019,11/11/2023,4/30/2024,19
+106325,Married,Male,Outsource,Machine Learning Engineer,Experienced,Good,Mumbai,LinkedIn,916420775204,nirvaan.aggarwal@gmail.com,Graduate,Still Working,24/03/2002,24/08/2023,6/19/2025,NA,8
+111171,Married,Male,FullTime,Data Scientist,Experienced,Good,Mumbai,Indeed,917440252056,pranay.bora@gmail.com,Graduate,Still Working,18/05/1985,23/02/2018,12/1/2025,NA,20
+106419,Married,Female,Outsource,Machine Learning Engineer,Experienced,Excellent,Mumbai,Employee Referral,919398215123,advika.balasubramanian@gmail.com,Graduate,Career Change,24/05/1971,26/06/2024,6/27/2021,12/27/2022,8
+100309,Married,Female,FullTime,Data Scientist,Experienced,Good,Gurgaon,Indeed,917604908138,mannat.lad@gmail.com,Graduate,Career Change,20/08/1966,11/9/2016,7/21/2022,3/25/2023,8
+110500,Unmarried,Male,FullTime,Data Scientist,Fresher,Excellent,Hyderabad,Naukri.com,917904561920,mannat.sridhar@gmail.com,Postgraduate,Still Working,15/09/1997,17/12/2016,9/27/2024,NA,0
+110533,Married,Female,FullTime,Software Engineer,Experienced,Poor,Mumbai,Indeed,919506266870,hrishita.ahuja@gmail.com,Postgraduate,Career Change,19/01/1970,10/10/2018,9/1/2021,9/2/2021,11
+110927,Married,Female,FullTime,Quality Analyst,Experienced,Excellent,Gurgaon,Naukri.com,918417477808,neelofar.arora@gmail.com,Graduate,Career Change,15/08/1999,14/02/2023,8/24/2020,8/25/2020,8
+105548,Married,Male,FullTime,Product Manager,Experienced,Excellent,Pune,Internshala,916186238329,nehmat.kakar@gmail.com,Graduate,Career Change,12/8/1990,27/09/2021,12/27/2023,12/28/2023,14
+111354,Married,Female,FullTime,Project Manager,Experienced,Excellent,Gurgaon,Indeed,917317711524,samaira.mangal@gmail.com,Postgraduate,Career Change,18/05/1981,4/2/2020,8/8/2025,8/9/2025,6
+100895,Married,Male,FullTime,Software Engineer,Experienced,Good,Bengaluru,Naukri.com,918708587728,vaibhav.krishna@gmail.com,Postgraduate,Career Change,7/1/1986,10/3/2023,7/4/2025,7/5/2025,16
+110783,Married,Male,Outsource,Data Engineer,Fresher,Good,Hyderabad,Company Website,919060991421,saksham.venkatesh@gmail.com,Graduate,Career Change,21/08/1988,27/02/2017,1/28/2025,1/29/2025,0
+105507,Married,Female,FullTime,Data Analyst,Experienced,Good,Hyderabad,Naukri.com,918486746580,vedika.ramaswamy@gmail.com,Graduate,Career Change,7/6/1965,3/8/2022,6/23/2025,6/24/2025,12
+106710,Married,Female,FullTime,Marketing Analyst,Experienced,Poor,Gurgaon,Company Website,919054087808,anahita.boase@gmail.com,Graduate,Career Change,28/10/1984,31/08/2016,1/19/2025,1/20/2025,10
+101236,Married,Male,FullTime,Software Engineer,Experienced,Good,Pune,Naukri.com,916852804939,shray.lata@gmail.com,Graduate,Toxic Work Culture,14/02/1973,25/11/2018,6/17/2025,6/18/2025,8
+105985,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Gurgaon,Employee Referral,918710787291,yakshit.sandal@gmail.com,Graduate,Career Change,13/02/1975,13/04/2024,7/11/2024,7/12/2024,25
+111202,Married,Female,FullTime,Intern,Experienced,Excellent,Gurgaon,Indeed,919665824389,aarna.virk@gmail.com,Graduate,Still Working,17/12/1996,27/02/2023,4/30/2025,NA,0
+100621,Married,Female,FullTime,Business Analyst,Experienced,Good,Mumbai,Employee Referral,917851837700,sana.tata@gmail.com,Graduate,Still Working,12/11/1984,23/05/2018,9/23/2024,NA,24
+100301,Married,Female,FullTime,Human Resource Manager,Experienced,Excellent,Pune,Naukri.com,916027111017,tara.tandon@gmail.com,Graduate,Still Working,2/3/1992,19/04/2016,3/22/2025,NA,8
+101120,Married,Female,FullTime,Product Manager,Experienced,Poor,Hyderabad,LinkedIn,917780453241,samaira.bal@gmail.com,Graduate,Still Working,8/12/2002,22/05/2016,8/30/2024,NA,14
+101124,Married,Male,Outsource,Data Scientist,Experienced,Good,Mumbai,Internshala,916705429587,reyansh.thaker@gmail.com,Postgraduate,Toxic Work Culture,28/04/1983,14/10/2019,12/17/2024,12/18/2024,2
+110788,Unmarried,Female,Outsource,Business Analyst,Fresher,Good,Bengaluru,Employee Referral,918941782732,ryan.char@gmail.com,Graduate,Career Change,29/10/1997,6/6/2020,9/19/2024,9/20/2024,0
+105394,Married,Male,Outsource,Machine Learning Engineer,Experienced,Good,Pune,Employee Referral,918158026118,yuvraj..banerjee@gmail.com,Graduate,Still Working,22/06/1971,10/8/2024,5/14/2025,NA,15
+101226,Unmarried,Male,FullTime,Delivery Manager,Fresher,Good,Pune,LinkedIn,916699957596,ehsaan.dugar@gmail.com,Postgraduate,Still Working,1/9/1968,4/5/2016,2/5/2025,NA,0
+105911,Married,Male,FullTime,Software Engineer,Experienced,Good,Mumbai,Naukri.com,918046759567,lakshay.bhalla@gmail.com,Postgraduate,Career Change,27/09/1992,17/01/2023,10/1/2025,10/2/2025,25
+110566,Married,Male,FullTime,Business Analyst,Experienced,Excellent,Pune,Internshala,919519728375,aayush.ganguly@gmail.com,Graduate,Still Working,9/7/1981,1/11/2023,6/3/2025,NA,3
+106577,Married,Male,Outsource,Marketing Analyst,Experienced,Good,Mumbai,Company Website,919752029432,stuvan.yadav@gmail.com,Graduate,Still Working,25/12/1993,21/03/2024,8/16/2024,NA,11
+106473,Married,Male,FullTime,VP-Technology Solution,Experienced,Excellent,Hyderabad,Internshala,916284833129,rasha.dutta@gmail.com,Graduate,Still Working,10/2/1975,17/06/2020,9/4/2025,NA,20
+100603,Married,Male,FullTime,Software Engineer,Experienced,Good,Mumbai,Company Website,919629167324,saksham.dhar@gmail.com,Graduate,Toxic Work Culture,1/5/2001,24/07/2018,9/29/2024,9/30/2024,12
+106411,Married,Male,Outsource,Machine Learning Engineer,Experienced,Good,Hyderabad,Internshala,916193483765,manjari.sawhney@gmail.com,Postgraduate,Career Change,30/03/1987,17/06/2018,5/4/2025,5/5/2025,17
+100730,Unmarried,Male,FullTime,Human Resource Manager,Fresher,Excellent,Bengaluru,Employee Referral,916058980826,madhup.gopal@gmail.com,Postgraduate,Still Working,24/08/1986,7/10/2019,2/15/2025,NA,1
+106540,Married,Female,Outsource,Machine Learning Engineer,Experienced,Good,Mumbai,Naukri.com,918255868975,vritika.swamy@gmail.com,Postgraduate,Still Working,4/4/1988,7/3/2016,2/9/2024,NA,14
+106529,Married,Female,Outsource,Quality Analyst,Experienced,Good,Hyderabad,Internshala,916852248821,badal.tata@gmail.com,Graduate,Toxic Work Culture,20/12/1989,6/3/2021,1/4/2025,1/5/2025,11
+110848,Married,Female,FullTime,Marketing Analyst,Experienced,Excellent,Pune,Company Website,916913981494,neelofar.bhatnagar@gmail.com,Postgraduate,Still Working,15/08/1980,14/12/2019,6/2/2025,NA,4
+105437,Married,Female,FullTime,Software Engineer,Experienced,Good,Gurgaon,LinkedIn,919202286416,eshani.chaudhry@gmail.com,Graduate,Still Working,30/07/1989,26/09/2018,12/13/2024,NA,25
+110342,Married,Male,FullTime,Software Engineer,Experienced,Good,Gurgaon,LinkedIn,916742948150,kanav.brahmbhatt@gmail.com,Graduate,Career Change,13/07/2001,6/9/2017,6/1/2025,6/2/2025,16
+110552,Unmarried,Female,FullTime,Product Manager,Fresher,Excellent,Gurgaon,Company Website,919416261764,anika.hayre@gmail.com,Graduate,Still Working,24/10/1990,12/7/2020,11/6/2025,NA,1
+111140,Married,Female,FullTime,Data Analyst,Experienced,Good,Pune,Company Website,919998629385,shaan.sampath@gmail.com,Graduate,Toxic Work Culture,1/4/2003,24/08/2022,12/8/2025,12/9/2025,7
+100373,Married,Male,Outsource,Software Engineer,Experienced,Poor,Mumbai,Internshala,918182270612,biju.kari@gmail.com,Postgraduate,Toxic Work Culture,14/11/1972,9/5/2018,7/21/2025,7/22/2025,18
+106561,Married,Male,Outsource,Data Analyst,Experienced,Good,Mumbai,Employee Referral,919097537272,vivaan.kibe@gmail.com,Postgraduate,Career Change,8/3/1980,26/08/2018,12/29/2024,12/30/2024,8
+110363,Married,Female,Outsource,Quality Analyst,Experienced,Excellent,Mumbai,Company Website,919302025301,advika.bera@gmail.com,Graduate,Career Change,7/10/1981,1/4/2016,1/5/2025,1/6/2025,8
+101682,Married,Female,FullTime,Business Analyst,Experienced,Good,Bengaluru,Company Website,916301748402,akarsh.khalsa@gmail.com,Postgraduate,Still Working,20/10/2001,30/05/2022,12/2/2025,NA,13
+105543,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Bengaluru,Internshala,917832176635,sara.soman@gmail.com,Postgraduate,Toxic Work Culture,9/6/1981,13/11/2019,11/29/2024,11/30/2024,17
+101626,Married,Female,FullTime,Project Manager,Experienced,Excellent,Pune,Naukri.com,918755313549,nirvaan.gulati@gmail.com,Graduate,Still Working,30/04/1974,11/1/2021,2/26/2025,NA,13
+110505,Unmarried,Male,FullTime,Machine Learning Engineer,Experienced,Excellent,Gurgaon,LinkedIn,919898617205,tejas.guha@gmail.com,Graduate,Toxic Work Culture,17/04/1997,3/11/2019,2/19/2025,2/20/2025,5
+106141,Married,Female,FullTime,Product Manager,Experienced,Good,Bengaluru,Internshala,916436998408,misha.comar@gmail.com,Graduate,Career Change,1/5/2000,23/01/2016,10/25/2024,10/26/2024,13
+111250,Married,Female,FullTime,Project Manager,Experienced,Good,Mumbai,Naukri.com,917158042203,yasmin.mallick@gmail.com,Postgraduate,Toxic Work Culture,29/07/1982,15/09/2021,7/29/2025,7/30/2025,14
+105390,Married,Female,Outsource,Quality Assurance Engineer,Experienced,Good,Bengaluru,LinkedIn,916600630668,aayush.sarma@gmail.com,Postgraduate,Still Working,17/10/1974,15/05/2024,9/10/2024,NA,4
+100381,Married,Female,FullTime,Data Engineer,Experienced,Poor,Gurgaon,Naukri.com,919233216705,ayesha.barman@gmail.com,Graduate,Still Working,3/11/1990,29/05/2019,10/29/2024,NA,14
+105634,Unmarried,Female,FullTime,Human Resource Manager,Fresher,Good,Bengaluru,Employee Referral,917681443289,zara.khanna@gmail.com,Graduate,Toxic Work Culture,27/08/1970,30/04/2022,10/1/2025,10/2/2025,0
+100826,Married,Female,Outsource,Machine Learning Engineer,Experienced,Good,Bengaluru,Naukri.com,917616778808,anahi.bera@gmail.com,Graduate,Long Working Hours,1/1/2000,20/02/2023,7/5/2025,7/6/2025,24
+110407,Married,Female,FullTime,Delivery Manager,Experienced,Good,Gurgaon,LinkedIn,919781031570,sumer.sarna@gmail.com,Postgraduate,Still Working,2/4/1980,11/8/2021,4/10/2024,NA,6
+101188,Married,Female,FullTime,Product Manager,Experienced,Excellent,Pune,Indeed,919532856897,tarini.ramaswamy@gmail.com,Graduate,Career Change,27/03/1996,6/11/2020,6/19/2025,6/20/2025,8
+105820,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Gurgaon,Internshala,917603455615,anahi.kara@gmail.com,Graduate,Career Change,25/07/1984,11/9/2020,1/14/2025,1/15/2025,16
+111184,Married,Female,Outsource,Quality Analyst,Experienced,Excellent,Mumbai,Indeed,917427347545,mishti.dugar@gmail.com,Graduate,Career Change,1/6/1986,31/05/2020,5/4/2025,5/5/2025,5
+111302,Married,Female,Outsource,Human Resource Manager,Experienced,Excellent,Pune,LinkedIn,918386261168,zain.bhagat@gmail.com,Graduate,Career Change,12/2/1966,8/2/2019,12/26/2024,12/27/2024,14
+111533,Married,Female,Outsource,Data Analyst,Experienced,Good,Hyderabad,Company Website,918893666183,samaira.dua@gmail.com,Graduate,Career Change,10/7/1968,30/07/2020,3/4/2025,3/5/2025,5
+106660,Married,Female,FullTime,VP-Business Solution,Experienced,Good,Bengaluru,LinkedIn,916347954423,kavya.sarin@gmail.com,Postgraduate,Still Working,14/04/1976,18/08/2022,6/6/2025,NA,20
+105937,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Pune,Employee Referral,916057647273,sara.badami@gmail.com,Graduate,Long Working Hours,28/02/1977,3/4/2022,7/8/2025,7/9/2025,14
+101053,Married,Female,Outsource,Marketing Analyst,Experienced,Excellent,Hyderabad,Naukri.com,917937338398,vedika.kar@gmail.com,Graduate,Career Change,2/2/1977,20/03/2018,6/22/2025,6/23/2025,6
+111692,Unmarried,Female,FullTime,Software Tester,Fresher,Good,Bengaluru,Indeed,916722903719,rhea.sastry@gmail.com,Graduate,Long Working Hours,20/09/1977,28/11/2021,2/5/2025,2/6/2025,0
+111397,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Pune,Internshala,918702698945,faiyaz.varma@gmail.com,Graduate,Still Working,29/11/1988,29/07/2018,3/12/2024,NA,23
+100674,Married,Female,FullTime,Software Tester,Experienced,Excellent,Gurgaon,Indeed,917148786818,ehsaan.gara@gmail.com,Graduate,Long Working Hours,8/4/1984,9/8/2016,12/21/2024,12/22/2024,12
+110454,Married,Female,FullTime,Delivery Manager,Experienced,Good,Pune,Internshala,917560247238,kashvi.gokhale@gmail.com,Graduate,Long Working Hours,11/1/2003,11/4/2020,11/8/2025,11/9/2025,8
+100769,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Mumbai,Naukri.com,918425425193,piya.mann@gmail.com,Graduate,Still Working,24/08/1983,2/7/2021,10/9/2024,NA,23
+105779,Unmarried,Male,Outsource,Delivery Manager,Experienced,Excellent,Mumbai,LinkedIn,917678467802,baiju.kohli@gmail.com,Graduate,Still Working,7/8/1988,13/06/2022,4/12/2024,NA,4
+110642,Married,Male,FullTime,Data Analyst,Experienced,Excellent,Hyderabad,Company Website,919764037901,farhan.gokhale@gmail.com,Graduate,Still Working,4/9/1989,11/6/2017,5/17/2025,NA,19
+110524,Married,Female,FullTime,Software Engineer,Experienced,Good,Gurgaon,Employee Referral,919752297763,kimaya.bahri@gmail.com,Graduate,Still Working,31/12/1993,8/7/2019,9/22/2024,NA,20
+106501,Unmarried,Female,Outsource,Project Manager,Experienced,Excellent,Gurgaon,Naukri.com,918231610237,kashvi.kuruvilla@gmail.com,Postgraduate,Long Working Hours,12/7/1988,11/9/2019,12/19/2024,12/20/2024,3
+105688,Married,Female,FullTime,Data Scientist,Experienced,Good,Bengaluru,Naukri.com,917919226317,dishani.kanda@gmail.com,Postgraduate,Long Working Hours,18/05/1977,11/1/2018,9/19/2024,9/20/2024,24
+110612,Married,Female,FullTime,Data Scientist,Experienced,Good,Gurgaon,Company Website,918284401562,tara.anand@gmail.com,Graduate,Long Working Hours,17/01/1980,6/12/2020,12/28/2024,12/29/2024,15
+110478,Unmarried,Female,Outsource,Business Analyst,Fresher,Poor,Hyderabad,Employee Referral,918529560985,tanya.lala@gmail.com,Graduate,Still Working,2/7/1989,9/6/2017,12/3/2025,NA,0
+105370,Married,Female,Outsource,Software Engineer,Experienced,Good,Pune,LinkedIn,918310605281,kartik.dhar@gmail.com,Graduate,Long Working Hours,13/10/1996,12/3/2017,12/20/2024,12/21/2024,13
+100852,Married,Female,FullTime,Delivery Manager,Experienced,Excellent,Hyderabad,LinkedIn,919709751573,kaira.walia@gmail.com,Graduate,Still Working,29/04/1972,16/01/2020,3/27/2025,NA,14
+106462,Married,Male,FullTime,Software Engineer,Experienced,Good,Hyderabad,Naukri.com,919879649339,bhavin.sodhi@gmail.com,Postgraduate,Long Working Hours,28/12/1978,7/9/2016,10/31/2024,11/1/2024,17
+101163,Married,Female,FullTime,Business Analyst,Experienced,Excellent,Gurgaon,Indeed,917906937017,samar.dhillon@gmail.com,Postgraduate,Still Working,15/07/1979,21/09/2020,3/4/2025,NA,9
+110312,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Pune,Internshala,919226097440,trisha.borah@gmail.com,Graduate,Still Working,17/08/1980,12/3/2024,7/26/2025,NA,24
+100942,Unmarried,Female,FullTime,Data Engineer,Fresher,Good,Pune,Internshala,919287643480,samar.rao@gmail.com,Graduate,Still Working,11/1/1987,10/1/2016,1/31/2025,NA,0
+106620,Married,Female,FullTime,Quality Analyst,Experienced,Excellent,Gurgaon,Employee Referral,918641103397,pari.korpal@gmail.com,Graduate,Still Working,20/12/1976,22/11/2020,9/27/2024,NA,11
+105538,Unmarried,Female,FullTime,Quality Analyst,Fresher,Good,Pune,Indeed,919432387755,nirvi.sankar@gmail.com,Graduate,Still Working,8/7/1974,13/06/2018,1/4/2025,NA,1
+100515,Married,Female,Outsource,Machine Learning Engineer,Experienced,Good,Gurgaon,Indeed,916828173181,darshit.varty@gmail.com,Graduate,Still Working,30/01/1977,6/6/2018,2/16/2025,NA,19
+106245,Married,Female,FullTime,Data Analyst,Experienced,Good,Mumbai,Indeed,918938127903,zara.subramaniam@gmail.com,Graduate,Still Working,8/11/1966,2/1/2018,3/15/2025,NA,7
+110699,Married,Male,Outsource,Data Scientist,Experienced,Excellent,Mumbai,Naukri.com,917608550483,kismat.krishnan@gmail.com,Postgraduate,Still Working,18/04/1990,12/10/2018,9/8/2025,NA,19
+105678,Unmarried,Female,FullTime,Data Engineer,Experienced,Good,Pune,Internshala,916510017835,ritvik.tella@gmail.com,Postgraduate,Still Working,5/11/1997,4/4/2019,12/17/2024,NA,2
+111089,Married,Female,Outsource,Project Manager,Experienced,Excellent,Gurgaon,Internshala,916595482293,tara.koshy@gmail.com,Graduate,Still Working,3/10/1967,27/09/2020,6/19/2025,NA,11
+110423,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Pune,Indeed,916128893230,adira.mammen@gmail.com,Graduate,Still Working,26/06/1975,13/05/2018,7/14/2025,NA,21
+110646,Unmarried,Female,FullTime,Project Manager,Fresher,Good,Mumbai,Company Website,916925455347,damini.sodhi@gmail.com,Graduate,Career Change,11/11/1985,26/10/2023,6/26/2025,6/27/2025,1
+105419,Unmarried,Female,FullTime,Marketing Analyst,Fresher,Excellent,Hyderabad,Internshala,919668129895,anay.sarraf@gmail.com,Postgraduate,Still Working,25/02/1988,21/06/2021,7/21/2025,NA,1
+100597,Married,Male,FullTime,CEO,Experienced,Excellent,Hyderabad,Company Website,917246399803,aarush.kanda@gmail.com,Graduate,Still Working,9/11/1974,30/07/2016,6/11/2024,NA,17
+100992,Unmarried,Female,Outsource,Human Resource Manager,Fresher,Good,Pune,Company Website,919570435113,kimaya.bhargava@gmail.com,Postgraduate,Career Change,24/06/1985,1/7/2021,11/14/2024,11/15/2024,1
+101306,Married,Female,Outsource,Machine Learning Engineer,Experienced,Good,Bengaluru,Naukri.com,919648937203,ishaan.rout@gmail.com,Graduate,Still Working,11/5/1985,11/1/2024,7/1/2025,NA,9
+100919,Married,Male,FullTime,Software Tester,Experienced,Good,Gurgaon,LinkedIn,918742750228,ivan.sama@gmail.com,Graduate,Long Working Hours,9/3/1970,25/10/2016,3/25/2025,3/26/2025,8
+106638,Married,Male,FullTime,Data Analyst,Experienced,Good,Hyderabad,Indeed,918138424381,ranbir.arya@gmail.com,Postgraduate,Still Working,18/05/1966,24/08/2019,8/15/2024,NA,12
+105429,Unmarried,Male,FullTime,Human Resource Manager,Experienced,Excellent,Bengaluru,Company Website,916092893466,gokul.buch@gmail.com,Graduate,Still Working,28/11/1976,10/2/2022,2/10/2024,NA,3
+110932,Married,Female,FullTime,Data Analyst,Fresher,Good,Hyderabad,Internshala,919442815299,nehmat.dubey@gmail.com,Graduate,Long Working Hours,1/9/1977,2/3/2017,12/20/2024,12/21/2024,0
+100760,Married,Male,FullTime,Data Scientist,Experienced,Good,Pune,LinkedIn,916868929198,kartik.anne@gmail.com,Graduate,Long Working Hours,24/06/1993,12/4/2016,8/31/2024,9/1/2024,13
+100639,Married,Female,FullTime,VP-Delivery Head,Experienced,Poor,Mumbai,LinkedIn,917340412622,devansh.sahni@gmail.com,Graduate,Still Working,1/12/2000,19/11/2020,11/18/2024,NA,13
+111049,Unmarried,Male,FullTime,Project Manager,Fresher,Poor,Mumbai,LinkedIn,916299280217,nirvaan.sarin@gmail.com,Graduate,Long Working Hours,18/01/1965,24/05/2016,3/21/2025,3/22/2025,0
+111157,Married,Female,FullTime,Delivery Manager,Experienced,Good,Bengaluru,Company Website,916318328553,farhan.mani@gmail.com,Graduate,Still Working,11/4/1970,4/3/2017,10/23/2024,NA,6
+100957,Married,Female,FullTime,Software Engineer,Experienced,Excellent,Bengaluru,LinkedIn,918223315208,vardaniya.jain@gmail.com,Graduate,Long Working Hours,29/01/1974,12/8/2023,3/19/2025,3/20/2025,17
+111083,Married,Male,Outsource,Machine Learning Engineer,Experienced,Excellent,Gurgaon,Naukri.com,916097250371,fateh.deep@gmail.com,Graduate,Still Working,6/1/1988,16/05/2022,7/26/2025,NA,14
+110793,Unmarried,Female,FullTime,Human Resource Manager,Experienced,Poor,Bengaluru,Employee Referral,919500927660,fateh.chaudhari@gmail.com,Graduate,Long Working Hours,13/08/1991,27/01/2021,9/11/2024,9/12/2024,2
+105969,Married,Female,Outsource,Quality Assurance Engineer,Experienced,Excellent,Bengaluru,Company Website,919507490853,ira.setty@gmail.com,Postgraduate,Still Working,23/10/1997,13/11/2021,1/11/2024,NA,6
+111235,Married,Female,FullTime,Data Scientist,Experienced,Good,Hyderabad,Naukri.com,916005678755,dhruv.sandal@gmail.com,Graduate,Long Working Hours,8/5/1994,27/07/2021,9/22/2024,9/23/2024,25
+101192,Unmarried,Female,FullTime,Delivery Manager,Fresher,Good,Hyderabad,Company Website,918913075239,sana.sampath@gmail.com,Graduate,Long Working Hours,10/6/1988,17/09/2017,1/31/2025,2/1/2025,1
+100610,Married,Female,FullTime,Delivery Manager,Experienced,Good,Mumbai,Company Website,918152082516,diya.sridhar@gmail.com,Graduate,Long Working Hours,6/3/1966,11/5/2017,5/11/2024,5/12/2024,8
+111209,Unmarried,Female,FullTime,Machine Learning Engineer,Fresher,Good,Gurgaon,Employee Referral,919168076619,divij.ramanathan@gmail.com,Graduate,Long Working Hours,23/05/1994,30/10/2021,2/8/2025,2/9/2025,0
+100350,Married,Female,FullTime,Machine Learning Engineer,Experienced,Poor,Mumbai,LinkedIn,918932529075,damini.vaidya@gmail.com,Graduate,Long Working Hours,22/02/1998,3/10/2018,10/2/2025,10/3/2025,25
+110652,Married,Female,FullTime,CDO,Experienced,Excellent,Pune,Naukri.com,917976843980,tarini.kakar@gmail.com,Graduate,Still Working,12/5/1985,10/7/2024,4/20/2025,NA,25
+101407,Married,Female,FullTime,VP-Data And AI,Experienced,Excellent,Hyderabad,Indeed,918621641604,aarush.kibe@gmail.com,Graduate,Still Working,12/5/1974,3/1/2016,1/6/2025,NA,19
+101389,Unmarried,Female,FullTime,Human Resource Manager,Fresher,Excellent,Gurgaon,Company Website,916294355482,darshit.dewan@gmail.com,Graduate,Long Working Hours,16/02/1978,8/8/2021,11/19/2024,11/20/2024,1
+111290,Married,Female,FullTime,Data Analyst,Experienced,Good,Mumbai,Naukri.com,919942483564,advik.dhar@gmail.com,Graduate,Still Working,13/10/1974,31/01/2017,10/18/2024,NA,7
+101037,Married,Female,FullTime,Quality Assurance Engineer,Experienced,Excellent,Mumbai,Indeed,919364370017,siya.wagle@gmail.com,Graduate,Still Working,26/08/1986,25/11/2020,6/13/2025,NA,9
+106436,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Gurgaon,Naukri.com,917341048787,dishani.chad@gmail.com,Graduate,Long Working Hours,26/12/1977,9/9/2020,1/26/2025,1/27/2025,23
+105558,Married,Female,FullTime,Software Engineer,Experienced,Good,Mumbai,Internshala,917947884266,eva.sankar@gmail.com,Postgraduate,Still Working,20/01/1989,13/10/2018,11/18/2024,NA,16
+101331,Unmarried,Female,Outsource,Data Scientist,Fresher,Good,Mumbai,Company Website,916572004470,jiya.mani@gmail.com,Graduate,Still Working,23/07/1986,23/10/2021,10/6/2025,NA,1
+106599,Married,Female,FullTime,COO,Experienced,Excellent,Pune,Indeed,919756756047,priyansh.deshpande@gmail.com,Graduate,Still Working,30/05/1990,23/12/2016,4/8/2025,NA,24
+106697,Married,Female,FullTime,Business Analyst,Experienced,Excellent,Hyderabad,Internshala,916334178108,amani.sharma@gmail.com,Postgraduate,Still Working,20/06/1993,5/4/2023,9/2/2025,NA,7
+101264,Married,Female,FullTime,Software Tester,Experienced,Good,Mumbai,Internshala,917804711156,zaina.sinha@gmail.com,Postgraduate,Still Working,14/03/1997,14/10/2019,6/19/2025,NA,8
+105488,Married,Male,FullTime,Delivery Manager,Experienced,Good,Mumbai,Indeed,917283532692,tejas.biswas@gmail.com,Postgraduate,Long Working Hours,16/03/1973,17/10/2016,11/16/2024,11/17/2024,3
+111373,Married,Female,Outsource,Software Engineer,Experienced,Excellent,Hyderabad,Employee Referral,916813846650,ishaan.dua@gmail.com,Graduate,Still Working,26/06/2003,25/03/2023,12/30/2024,NA,21
+100398,Married,Female,Outsource,Software Engineer,Experienced,Poor,Gurgaon,LinkedIn,917699924821,mishti.ramakrishnan@gmail.com,Postgraduate,Long Working Hours,23/03/1987,22/11/2016,6/8/2025,6/9/2025,13
+111266,Married,Female,FullTime,Quality Assurance Engineer,Experienced,Excellent,Bengaluru,Indeed,918931505394,vritika.ramesh@gmail.com,Graduate,Long Working Hours,21/03/1999,8/7/2017,8/29/2024,8/30/2024,15
+106608,Married,Female,FullTime,Data Engineer,Experienced,Good,Mumbai,Indeed,919420561576,romil.sidhu@gmail.com,Graduate,Still Working,5/6/1994,27/05/2023,10/2/2025,NA,14
+100899,Married,Female,FullTime,Data Scientist,Experienced,Good,Hyderabad,Naukri.com,919996566708,aradhya.khatri@gmail.com,Postgraduate,Still Working,22/02/1989,28/01/2023,4/24/2025,NA,7
+101662,Married,Female,FullTime,Marketing Analyst,Experienced,Poor,Hyderabad,Indeed,919187507411,mishti.walla@gmail.com,Graduate,Long Working Hours,5/4/1965,18/11/2021,7/13/2025,7/14/2025,6
+111427,Married,Male,Outsource,Business Analyst,Experienced,Excellent,Bengaluru,Internshala,918424931101,nishith.kapur@gmail.com,Graduate,Long Working Hours,19/01/1984,30/01/2020,9/15/2024,9/16/2024,9
+105592,Married,Female,FullTime,Delivery Manager,Experienced,Poor,Hyderabad,Internshala,918553109307,mahika.bhardwaj@gmail.com,Postgraduate,Long Working Hours,18/06/1981,17/09/2022,5/3/2025,5/4/2025,15
+111366,Married,Female,Outsource,Data Scientist,Experienced,Good,Bengaluru,Indeed,919211598560,yasmin.bhatnagar@gmail.com,Graduate,Still Working,29/09/1980,27/04/2022,8/21/2024,NA,13
+105986,Married,Female,FullTime,Data Scientist,Experienced,Good,Pune,Internshala,916970112664,mishti.chad@gmail.com,Graduate,Still Working,7/2/1969,26/06/2018,3/14/2025,NA,19
+110774,Unmarried,Female,Outsource,Human Resource Manager,Fresher,Excellent,Bengaluru,Company Website,916312001234,ahana..sawhney@gmail.com,Postgraduate,Still Working,6/2/1992,19/06/2022,2/12/2024,NA,1
+101510,Married,Female,Outsource,Business Analyst,Experienced,Good,Hyderabad,Company Website,916964033620,aaryahi.yogi@gmail.com,Postgraduate,Long Working Hours,18/07/1985,16/12/2018,10/24/2024,10/25/2024,6
+106109,Married,Male,FullTime,Software Engineer,Experienced,Excellent,Mumbai,Employee Referral,916299883693,advik.saha@gmail.com,Graduate,Long Working Hours,15/07/1975,25/09/2015,7/19/2025,7/20/2025,21
+111569,Married,Male,Outsource,Data Analyst,Experienced,Excellent,Pune,LinkedIn,916364287347,yuvraj.chad@gmail.com,Graduate,Long Working Hours,24/05/1974,26/07/2020,1/16/2025,1/17/2025,7
+105734,Married,Male,FullTime,Software Engineer,Experienced,Excellent,Pune,Company Website,919401758588,navya.bera@gmail.com,Graduate,Career Change,20/03/1973,30/10/2021,5/13/2025,5/14/2025,20
+101130,Married,Female,Outsource,Machine Learning Engineer,Experienced,Excellent,Mumbai,LinkedIn,917282405249,alisha.chada@gmail.com,Graduate,Still Working,29/01/1983,12/1/2019,8/4/2025,NA,20
+101511,Married,Male,FullTime,Data Engineer,Experienced,Good,Pune,Company Website,918475480683,shalv.balan@gmail.com,Graduate,Career Change,20/09/1999,13/03/2018,5/4/2025,5/5/2025,14
+106347,Married,Male,FullTime,Data Scientist,Experienced,Excellent,Hyderabad,Naukri.com,917205703259,misha.sangha@gmail.com,Graduate,Toxic Work Culture,8/2/1994,31/03/2021,9/19/2024,9/20/2024,18
+110842,Married,Female,Outsource,Software Engineer,Experienced,Excellent,Hyderabad,LinkedIn,918244272589,eva.yogi@gmail.com,Postgraduate,Career Change,6/2/1984,2/9/2017,5/15/2025,5/16/2025,18
+106446,Unmarried,Male,FullTime,Human Resource Manager,Experienced,Excellent,Bengaluru,Employee Referral,919364180899,lagan.bose@gmail.com,Graduate,Career Change,2/9/2001,30/08/2023,10/6/2025,10/7/2025,5
+101635,Married,Female,Outsource,Software Engineer,Experienced,Poor,Gurgaon,Employee Referral,917486918919,anahi.shukla@gmail.com,Graduate,Still Working,15/01/1974,25/09/2016,3/16/2025,NA,14
+100561,Married,Female,FullTime,CSO,Experienced,Excellent,Gurgaon,Indeed,916717166005,nitya.chaudhary@gmail.com,Graduate,Still Working,31/03/1991,7/2/2017,2/25/2025,NA,25
+105711,Married,Female,FullTime,Business Analyst,Experienced,Good,Pune,Company Website,917574256402,indrajit.bhardwaj@gmail.com,Postgraduate,Career Change,5/12/1995,14/12/2017,1/1/2025,1/2/2025,15
+105923,Married,Female,FullTime,Data Analyst,Experienced,Good,Bengaluru,LinkedIn,916914231409,urvi.bajwa@gmail.com,Graduate,Still Working,28/04/2003,26/09/2015,4/21/2025,NA,5
+105357,Married,Female,FullTime,Data Engineer,Experienced,Good,Mumbai,Internshala,917289137028,pihu.dâ€™alia@gmail.com,Graduate,Still Working,21/02/1993,25/01/2022,7/10/2024,NA,7
+100884,Married,Female,FullTime,Marketing Analyst,Experienced,Excellent,Bengaluru,LinkedIn,916422606744,baiju.master@gmail.com,Graduate,Career Change,14/12/1997,22/05/2020,7/20/2025,7/21/2025,2
+110481,Married,Female,FullTime,Data Engineer,Experienced,Good,Pune,LinkedIn,919059654337,jhanvi.goel@gmail.com,Postgraduate,Still Working,10/8/1979,12/6/2024,5/28/2025,NA,15
+106483,Married,Male,Outsource,Data Analyst,Experienced,Good,Mumbai,Internshala,917124249550,shlok.varma@gmail.com,Graduate,Career Change,25/05/1997,8/6/2018,5/20/2025,5/21/2025,11
+111591,Married,Female,FullTime,Quality Analyst,Experienced,Excellent,Hyderabad,Company Website,919294441222,diya.bhargava@gmail.com,Graduate,Still Working,7/9/1991,14/10/2017,1/31/2025,NA,6
+100906,Unmarried,Male,FullTime,Project Manager,Fresher,Excellent,Gurgaon,Employee Referral,918416158777,madhup.brar@gmail.com,Graduate,Still Working,17/05/1990,7/5/2024,8/17/2024,NA,1
+111326,Married,Female,Outsource,Data Analyst,Experienced,Excellent,Pune,Indeed,916325624602,ishita.sekhon@gmail.com,Postgraduate,Toxic Work Culture,7/3/1989,3/3/2019,1/8/2025,1/9/2025,15
+106294,Married,Female,FullTime,Data Scientist,Experienced,Good,Gurgaon,Internshala,919671238495,kismat.tara@gmail.com,Graduate,Toxic Work Culture,2/5/2003,25/11/2022,1/24/2025,1/25/2025,12
+106605,Married,Female,FullTime,Software Engineer,Experienced,Excellent,Pune,Employee Referral,916568472576,zain.de@gmail.com,Graduate,Still Working,24/03/1981,20/12/2020,7/7/2025,NA,25
+100801,Unmarried,Female,FullTime,Data Scientist,Fresher,Good,Hyderabad,Naukri.com,916595251640,jivika.jain@gmail.com,Graduate,Still Working,2/3/1971,29/12/2015,6/24/2025,NA,0
+101422,Married,Female,FullTime,Software Engineer,Experienced,Good,Gurgaon,LinkedIn,918810044072,nirvi.dara@gmail.com,Postgraduate,Toxic Work Culture,30/11/1986,18/04/2016,8/23/2024,8/24/2024,20
+110471,Married,Female,Outsource,Project Manager,Experienced,Good,Bengaluru,Company Website,916466594392,zoya.bajwa@gmail.com,Graduate,Still Working,1/2/1979,3/3/2020,11/13/2024,NA,13
+100326,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Gurgaon,LinkedIn,918174408548,onkar.magar@gmail.com,Graduate,Still Working,13/08/1972,2/4/2023,11/22/2024,NA,14
+110665,Married,Female,FullTime,VP-Human Resource,Experienced,Excellent,Pune,Indeed,917815118990,rasha.ramakrishnan@gmail.com,Graduate,Still Working,6/9/1964,13/07/2018,12/25/2024,NA,20
+105902,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Bengaluru,Indeed,919587468377,yakshit.balasubramanian@gmail.com,Graduate,Toxic Work Culture,31/05/1997,5/7/2016,11/10/2024,11/11/2024,23
+111703,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Pune,LinkedIn,919793947140,ela.shukla@gmail.com,Graduate,Toxic Work Culture,5/7/1977,2/7/2020,2/26/2025,2/27/2025,16
+101100,Married,Male,FullTime,Machine Learning Engineer,Experienced,Excellent,Mumbai,Employee Referral,919661866952,riaan.kibe@gmail.com,Graduate,Still Working,4/9/1982,23/01/2022,4/28/2025,NA,15
+100468,Married,Female,Outsource,Intern,Experienced,Good,Gurgaon,Indeed,919539496728,kiara.contractor@gmail.com,Graduate,Still Working,6/3/1986,9/7/2023,2/11/2024,NA,0
+110703,Married,Female,Outsource,Marketing Analyst,Experienced,Excellent,Mumbai,Naukri.com,916315034433,dhanush.majumdar@gmail.com,Graduate,Still Working,21/10/1987,24/08/2021,11/24/2024,NA,4
+106494,Married,Male,Outsource,Human Resource Manager,Experienced,Excellent,Bengaluru,Internshala,918071696267,jayant.anand@gmail.com,Graduate,Career Change,4/10/1974,3/12/2015,1/1/2025,1/2/2025,14
+110380,Unmarried,Male,FullTime,Delivery Manager,Experienced,Good,Gurgaon,Employee Referral,917052202061,farhan.chander@gmail.com,Graduate,Career Change,15/10/1971,27/07/2022,12/24/2024,12/25/2024,2
+111198,Married,Female,FullTime,Software Engineer,Experienced,Excellent,Pune,Naukri.com,919386716387,vritika.chakraborty@gmail.com,Graduate,Toxic Work Culture,29/04/1978,31/03/2016,2/17/2025,2/18/2025,21
+101652,Married,Male,FullTime,Software Engineer,Experienced,Excellent,Bengaluru,Internshala,919213323589,hazel.soman@gmail.com,Graduate,Still Working,13/04/1984,24/10/2022,1/27/2025,NA,13
+110461,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Pune,Company Website,918813173117,diya.thaker@gmail.com,Graduate,Toxic Work Culture,20/01/1983,1/3/2016,2/25/2025,2/26/2025,21
+111276,Unmarried,Male,FullTime,Machine Learning Engineer,Experienced,Excellent,Mumbai,Naukri.com,916441030028,yakshit.gade@gmail.com,Postgraduate,Still Working,11/10/1978,24/11/2019,7/3/2025,NA,3
+111220,Married,Male,FullTime,Data Scientist,Experienced,Excellent,Hyderabad,Company Website,916858521437,badal.bassi@gmail.com,Graduate,Still Working,4/4/1993,15/06/2022,5/4/2025,NA,18
+110580,Married,Female,FullTime,Business Analyst,Experienced,Excellent,Hyderabad,Employee Referral,916948165007,arnav.chopra@gmail.com,Graduate,Still Working,29/08/1984,22/01/2016,5/23/2025,NA,6
+111584,Unmarried,Female,Outsource,Quality Assurance Engineer,Fresher,Good,Pune,Company Website,917954418943,bhavin.taneja@gmail.com,Graduate,Still Working,28/09/1969,11/5/2018,1/2/2025,NA,1
+101154,Married,Female,FullTime,Software Engineer,Experienced,Good,Mumbai,Naukri.com,917099980330,prisha.walia@gmail.com,Graduate,Still Working,25/04/2001,9/2/2018,9/5/2025,NA,15
+101274,Married,Male,FullTime,Product Manager,Experienced,Excellent,Mumbai,Company Website,917391884107,taimur.chawla@gmail.com,Graduate,Still Working,27/11/1967,9/10/2023,4/21/2025,NA,13
+101647,Unmarried,Male,Outsource,Quality Assurance Engineer,Fresher,Excellent,Pune,Company Website,918852575983,parinaaz.dey@gmail.com,Postgraduate,Still Working,29/01/1973,10/9/2023,11/19/2024,NA,1
+100762,Married,Female,FullTime,Product Manager,Experienced,Good,Pune,LinkedIn,917028870200,anay.dhingra@gmail.com,Graduate,Career Change,12/7/1968,19/06/2018,9/5/2025,9/6/2025,10
+101345,Married,Male,FullTime,Machine Learning Engineer,Experienced,Good,Bengaluru,Employee Referral,919793714638,rasha.saxena@gmail.com,Graduate,Still Working,25/10/1965,3/11/2015,2/19/2025,NA,23
+105323,Married,Female,FullTime,Data Scientist,Experienced,Good,Gurgaon,Internshala,917560810667,anahi.bhat@gmail.com,Graduate,Still Working,24/04/1996,10/4/2024,1/24/2025,NA,24
+110858,Married,Female,FullTime,Software Engineer,Fresher,Good,Gurgaon,Indeed,917446119363,ela.mandal@gmail.com,Postgraduate,Still Working,12/2/1992,21/09/2015,12/11/2024,NA,0
+111318,Married,Male,Outsource,Data Scientist,Experienced,Good,Mumbai,LinkedIn,917022833793,devansh.bala@gmail.com,Postgraduate,Still Working,17/07/1967,12/7/2021,2/7/2025,NA,16
+106017,Married,Male,FullTime,Machine Learning Engineer,Experienced,Good,Bengaluru,LinkedIn,916639208418,vidur.som@gmail.com,Graduate,Still Working,4/7/1968,13/06/2021,12/4/2025,NA,23
+106687,Married,Female,FullTime,Marketing Analyst,Experienced,Good,Pune,Indeed,916447536466,tanya.grewal@gmail.com,Postgraduate,Still Working,9/5/1987,31/07/2016,5/29/2025,NA,14
+106013,Married,Female,Outsource,Quality Analyst,Experienced,Good,Bengaluru,Company Website,916993736697,abram.toor@gmail.com,Postgraduate,Still Working,2/10/2001,17/08/2023,1/22/2025,NA,14
+106314,Married,Female,Outsource,Product Manager,Experienced,Good,Hyderabad,Company Website,917169290764,kavya.taneja@gmail.com,Postgraduate,Toxic Work Culture,23/07/1999,2/11/2018,3/31/2025,4/1/2025,14
+105458,Married,Female,FullTime,Product Manager,Experienced,Good,Hyderabad,Employee Referral,916138787507,tarini.shenoy@gmail.com,Graduate,Still Working,8/8/1983,20/05/2020,5/20/2025,NA,9
+110836,Married,Male,FullTime,Machine Learning Engineer,Fresher,Good,Hyderabad,Indeed,916782972090,hridaan.kibe@gmail.com,Graduate,Career Change,28/01/1978,15/10/2019,6/28/2025,6/29/2025,1
+110980,Married,Female,FullTime,Data Analyst,Experienced,Good,Gurgaon,Naukri.com,916687542359,alia.jha@gmail.com,Graduate,Toxic Work Culture,20/04/1967,2/7/2020,11/22/2024,11/23/2024,14
+106008,Unmarried,Female,Outsource,Machine Learning Engineer,Fresher,Good,Pune,Naukri.com,918320341827,aarush.bhandari@gmail.com,Graduate,Still Working,28/11/1998,16/07/2021,2/27/2025,NA,0
+105441,Unmarried,Female,FullTime,Delivery Manager,Experienced,Good,Gurgaon,Naukri.com,917083003578,neelofar.kala@gmail.com,Graduate,Toxic Work Culture,3/12/1992,28/06/2019,2/8/2025,2/9/2025,2
+101666,Married,Female,FullTime,Software Engineer,Experienced,Excellent,Mumbai,Employee Referral,919198816120,faiyaz.agate@gmail.com,Postgraduate,Career Change,12/2/1972,26/09/2022,10/20/2024,10/21/2024,4
+105754,Married,Female,FullTime,CTO,Experienced,Good,Hyderabad,Indeed,917727512389,bhamini.kala@gmail.com,Graduate,Still Working,26/10/1965,19/07/2023,7/1/2025,NA,25
+100874,Married,Female,FullTime,Data Scientist,Experienced,Good,Bengaluru,Company Website,916314542732,anika.tandon@gmail.com,Postgraduate,Career Change,25/05/1978,31/03/2017,8/26/2024,8/27/2024,14
+101560,Married,Female,FullTime,Software Tester,Experienced,Excellent,Gurgaon,Company Website,919256233167,vihaan.shan@gmail.com,Graduate,Career Change,19/01/1975,6/10/2017,7/12/2024,7/13/2024,3
+100869,Married,Female,FullTime,Data Engineer,Experienced,Excellent,Hyderabad,Company Website,916197572537,oorja.vig@gmail.com,Graduate,Toxic Work Culture,29/01/1991,5/11/2015,2/21/2025,2/22/2025,7
+105997,Married,Female,FullTime,Data Scientist,Experienced,Good,Mumbai,LinkedIn,919250495938,krish.kale@gmail.com,Graduate,Career Change,28/09/1996,11/4/2024,6/30/2025,7/1/2025,17
+101005,Married,Female,Outsource,Data Engineer,Experienced,Good,Mumbai,Internshala,919320513828,samar.deshmukh@gmail.com,Graduate,Toxic Work Culture,27/11/1995,2/1/2020,7/20/2025,7/21/2025,12
+110876,Unmarried,Male,FullTime,Intern,Experienced,Excellent,Gurgaon,Indeed,917637772354,bhavin.batra@gmail.com,Graduate,Toxic Work Culture,14/10/1974,7/10/2023,11/17/2024,11/18/2024,5
+100520,Married,Female,FullTime,Product Manager,Experienced,Good,Hyderabad,LinkedIn,916384557294,tara.gandhi@gmail.com,Graduate,Career Change,9/8/1965,30/01/2016,3/26/2025,3/27/2025,20
+105889,Married,Female,FullTime,Business Analyst,Experienced,Poor,Gurgaon,Internshala,916391808492,jayan.issac@gmail.com,Graduate,Still Working,5/10/1967,7/6/2020,8/24/2024,NA,10
+100620,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Gurgaon,LinkedIn,918298395650,lavanya.batta@gmail.com,Postgraduate,Long Working Hours,17/02/1991,8/9/2019,12/16/2024,12/17/2024,12
+106555,Unmarried,Female,FullTime,Data Analyst,Fresher,Good,Bengaluru,Naukri.com,917593704717,ishita.sanghvi@gmail.com,Postgraduate,Toxic Work Culture,11/1/1995,1/1/2016,8/22/2024,8/23/2024,0
+106392,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Hyderabad,LinkedIn,918905257031,vaibhav.vora@gmail.com,Graduate,Long Working Hours,27/02/1973,29/12/2020,4/27/2025,4/28/2025,12
+106285,Married,Female,FullTime,Data Analyst,Experienced,Good,Mumbai,LinkedIn,917435710632,ranbir.mannan@gmail.com,Graduate,Still Working,31/12/1988,8/5/2017,4/14/2025,NA,13
+110412,Married,Male,FullTime,Delivery Manager,Experienced,Good,Pune,Internshala,919497425413,taran.bajwa@gmail.com,Graduate,Still Working,15/06/1998,20/11/2023,11/12/2024,NA,14
+100799,Married,Female,FullTime,Data Scientist,Experienced,Good,Pune,Indeed,917858405226,charvi.gara@gmail.com,Postgraduate,Still Working,23/02/1982,17/10/2020,5/23/2025,NA,14
+106480,Married,Female,FullTime,Software Tester,Experienced,Excellent,Mumbai,Company Website,917806636884,vritika.bahri@gmail.com,Graduate,Still Working,3/6/1991,13/09/2023,4/18/2025,NA,2
+106383,Married,Male,FullTime,Product Manager,Experienced,Excellent,Pune,Naukri.com,916292389327,madhup.dâ€™alia@gmail.com,Graduate,Still Working,17/10/1987,25/03/2022,6/20/2025,NA,15
+105808,Unmarried,Female,Outsource,Quality Analyst,Fresher,Poor,Gurgaon,LinkedIn,916903489144,tara.varughese@gmail.com,Postgraduate,Long Working Hours,28/08/1986,6/4/2022,12/31/2024,1/1/2025,0
+100815,Unmarried,Female,FullTime,Delivery Manager,Experienced,Good,Hyderabad,Naukri.com,919469864873,pihu.comar@gmail.com,Postgraduate,Long Working Hours,25/08/1990,14/09/2023,9/14/2024,9/15/2024,3
+100692,Married,Female,FullTime,Data Engineer,Experienced,Good,Bengaluru,Employee Referral,916469596986,mahika.dhillon@gmail.com,Graduate,Long Working Hours,22/08/1974,19/07/2016,1/6/2025,1/7/2025,12
+111356,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Bengaluru,Company Website,918199914043,ehsaan.keer@gmail.com,Graduate,Still Working,17/06/1985,18/11/2021,9/27/2024,NA,15
+110833,Married,Female,FullTime,Data Scientist,Experienced,Good,Bengaluru,Indeed,916885747474,rania.subramanian@gmail.com,Graduate,Toxic Work Culture,15/07/1976,4/11/2019,1/6/2025,1/7/2025,25
+106621,Unmarried,Male,FullTime,Project Manager,Fresher,Good,Hyderabad,Indeed,918890116647,gatik.barad@gmail.com,Postgraduate,Still Working,26/10/1992,31/10/2019,10/2/2025,NA,0
+101147,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Mumbai,Company Website,918258564395,dharmajan.ram@gmail.com,Postgraduate,Long Working Hours,25/10/2001,20/11/2017,1/28/2025,1/29/2025,19
+105401,Married,Female,FullTime,Data Analyst,Experienced,Excellent,Pune,Naukri.com,918695563252,amani.soman@gmail.com,Graduate,Long Working Hours,4/1/1979,15/04/2017,8/30/2024,8/31/2024,8
+101615,Married,Male,FullTime,Software Engineer,Experienced,Good,Bengaluru,LinkedIn,918219976722,vidur.barman@gmail.com,Graduate,Long Working Hours,28/04/1974,19/09/2021,7/27/2025,7/28/2025,13
+105685,Married,Female,FullTime,Intern,Experienced,Poor,Hyderabad,Company Website,916909482262,alisha.kala@gmail.com,Postgraduate,Long Working Hours,4/2/2003,12/4/2018,1/27/2025,1/28/2025,0
+101499,Married,Female,Outsource,Product Manager,Experienced,Excellent,Gurgaon,Naukri.com,916364728958,anaya.varty@gmail.com,Graduate,Still Working,3/5/1985,22/11/2022,2/20/2025,NA,19
+101434,Unmarried,Female,Outsource,Product Manager,Fresher,Excellent,Pune,Company Website,918475363496,ela.chakraborty@gmail.com,Postgraduate,Still Working,17/02/1978,11/5/2022,5/1/2025,NA,0
+110746,Married,Female,FullTime,Project Manager,Fresher,Good,Gurgaon,Internshala,917468041425,zeeshan.contractor@gmail.com,Postgraduate,Long Working Hours,16/03/1980,9/8/2023,10/23/2024,10/24/2024,0
+101401,Married,Female,FullTime,Data Analyst,Experienced,Good,Bengaluru,Naukri.com,918070461780,saira.balay@gmail.com,Graduate,Long Working Hours,8/12/1983,16/05/2023,4/25/2025,4/26/2025,19
+110590,Married,Female,Outsource,Product Manager,Experienced,Good,Mumbai,Internshala,918974500941,neysa.dara@gmail.com,Graduate,Long Working Hours,7/1/1989,26/11/2016,8/15/2024,8/16/2024,17
+106673,Married,Female,FullTime,Data Analyst,Experienced,Good,Bengaluru,LinkedIn,918607771766,neysa.sundaram@gmail.com,Graduate,Long Working Hours,11/7/1971,21/10/2023,5/10/2024,5/11/2024,11
+110450,Married,Female,FullTime,Software Engineer,Experienced,Good,Pune,Internshala,919577155319,tara.date@gmail.com,Postgraduate,Still Working,5/5/1968,23/02/2022,11/8/2025,NA,4
+100709,Married,Female,FullTime,Data Scientist,Experienced,Good,Gurgaon,Naukri.com,919452243380,baiju.dubey@gmail.com,Graduate,Long Working Hours,20/05/1991,4/4/2018,5/2/2025,5/3/2025,9
+111486,Unmarried,Male,FullTime,Human Resource Manager,Experienced,Good,Hyderabad,Indeed,919487055084,mohanlal.jha@gmail.com,Graduate,Still Working,16/08/1986,5/4/2022,2/14/2025,NA,5
+106069,Married,Female,Outsource,Software Engineer,Experienced,Good,Bengaluru,Internshala,916380227473,damini.reddy@gmail.com,Postgraduate,Still Working,5/12/1996,11/12/2019,7/8/2025,NA,21
+105293,Married,Female,FullTime,Quality Assurance Engineer,Experienced,Excellent,Mumbai,Naukri.com,917715518016,alisha.agate@gmail.com,Graduate,Long Working Hours,8/11/1969,9/6/2020,10/4/2025,10/5/2025,11
+106467,Married,Female,FullTime,Delivery Manager,Experienced,Good,Bengaluru,LinkedIn,918673569257,miraan.sha@gmail.com,Graduate,Still Working,6/5/1981,23/01/2016,5/31/2025,NA,13
+110725,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Pune,Indeed,917586803685,charvi.kulkarni@gmail.com,Graduate,Still Working,12/8/1978,9/1/2018,5/10/2024,NA,14
+101023,Unmarried,Male,FullTime,Delivery Manager,Experienced,Good,Gurgaon,Naukri.com,919339911450,ishaan.kala@gmail.com,Graduate,Long Working Hours,16/05/1970,14/12/2019,2/2/2025,2/3/2025,4
+100317,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Gurgaon,Indeed,918890422423,mannat.bhalla@gmail.com,Postgraduate,Still Working,2/10/1983,12/9/2017,7/28/2025,NA,23
+105736,Married,Female,FullTime,Business Analyst,Experienced,Good,Hyderabad,Employee Referral,918235925390,drishya.ray@gmail.com,Graduate,Still Working,6/8/1994,11/1/2024,6/21/2025,NA,6
+100526,Married,Male,FullTime,Product Manager,Experienced,Good,Bengaluru,Naukri.com,918602993184,azad.shukla@gmail.com,Postgraduate,Long Working Hours,7/12/1966,17/04/2017,3/14/2025,3/15/2025,20
+100338,Married,Male,FullTime,Project Manager,Experienced,Good,Mumbai,Internshala,916597840534,vidur.kala@gmail.com,Postgraduate,Still Working,15/12/1993,1/6/2018,4/17/2025,NA,7
+105951,Married,Female,FullTime,Intern,Experienced,Good,Pune,Company Website,916078678967,lakshay.loke@gmail.com,Graduate,Still Working,29/07/1978,15/08/2017,10/24/2024,NA,0
+100282,Unmarried,Male,FullTime,Software Engineer,Experienced,Good,Pune,Internshala,917772124414,uthkarsh.kala@gmail.com,Graduate,Still Working,6/7/1982,11/3/2016,4/24/2025,NA,2
+105296,Married,Female,Outsource,Product Manager,Experienced,Good,Pune,Employee Referral,919786252857,lakshit.deo@gmail.com,Postgraduate,Long Working Hours,18/10/1966,17/04/2018,2/12/2024,2/13/2024,14
+101058,Married,Female,Outsource,Marketing Analyst,Experienced,Good,Gurgaon,LinkedIn,918263510664,nitya.kari@gmail.com,Postgraduate,Long Working Hours,10/6/2003,16/10/2018,12/13/2024,12/14/2024,6
+111572,Married,Female,Outsource,Intern,Experienced,Excellent,Gurgaon,Employee Referral,916529811262,nishith.mangat@gmail.com,Graduate,Still Working,24/02/1968,11/5/2022,3/8/2025,NA,0
+105574,Unmarried,Male,FullTime,Data Engineer,Fresher,Good,Pune,Indeed,919174226148,farhan.johal@gmail.com,Graduate,Still Working,22/02/1976,2/11/2020,1/18/2025,NA,1
+110865,Married,Female,FullTime,Software Engineer,Experienced,Good,Mumbai,Indeed,917184925685,jayan.batra@gmail.com,Graduate,Long Working Hours,11/9/1975,27/06/2022,7/9/2024,7/10/2024,11
+100667,Unmarried,Female,FullTime,Quality Assurance Engineer,Experienced,Good,Mumbai,Employee Referral,918749424409,rania.kashyap@gmail.com,Graduate,Long Working Hours,3/2/1981,3/4/2019,3/19/2025,3/20/2025,2
+101043,Unmarried,Male,FullTime,Business Analyst,Experienced,Excellent,Mumbai,Indeed,918393257872,azad.ramachandran@gmail.com,Postgraduate,Long Working Hours,10/7/1979,30/06/2022,3/28/2025,3/29/2025,4
+101525,Married,Male,Outsource,Human Resource Manager,Experienced,Poor,Gurgaon,Internshala,917122618841,yuvraj..handa@gmail.com,Graduate,Still Working,14/01/1981,4/7/2020,5/1/2025,NA,6
+110658,Married,Male,FullTime,Data Scientist,Experienced,Good,Bengaluru,Indeed,916863104512,manikya.sarma@gmail.com,Postgraduate,Long Working Hours,27/12/1968,7/11/2023,7/26/2025,7/27/2025,20
+100353,Married,Male,FullTime,Data Scientist,Experienced,Good,Pune,Indeed,916070144149,hansh.sandhu@gmail.com,Graduate,Still Working,11/4/1974,7/1/2021,7/16/2025,NA,17
+101543,Married,Female,FullTime,Software Engineer,Experienced,Good,Mumbai,LinkedIn,917903262470,advika.iyer@gmail.com,Postgraduate,Still Working,16/02/2002,30/12/2022,7/3/2025,NA,18
+106547,Unmarried,Male,FullTime,Marketing Analyst,Experienced,Good,Mumbai,Employee Referral,916367969034,amira.walla@gmail.com,Postgraduate,Still Working,16/04/1986,8/9/2019,5/2/2025,NA,5
+106093,Married,Female,Outsource,Data Scientist,Experienced,Excellent,Hyderabad,Internshala,918647785887,divit.sampath@gmail.com,Graduate,Still Working,6/2/2003,4/12/2020,2/14/2025,NA,11
+111299,Married,Female,FullTime,Data Analyst,Experienced,Good,Mumbai,Naukri.com,916956426752,riya.chada@gmail.com,Graduate,Toxic Work Culture,19/06/1974,7/9/2015,4/11/2024,4/12/2024,13
+111643,Unmarried,Female,FullTime,Machine Learning Engineer,Experienced,Poor,Pune,Internshala,919785609830,shanaya.malhotra@gmail.com,Graduate,Long Working Hours,28/01/1995,27/06/2017,1/17/2025,1/18/2025,2
+111176,Unmarried,Female,Outsource,Data Scientist,Experienced,Poor,Gurgaon,Internshala,919174042076,shayak.zacharia@gmail.com,Postgraduate,Long Working Hours,10/3/1994,11/1/2016,10/12/2024,10/13/2024,2
+106363,Unmarried,Female,FullTime,Delivery Manager,Experienced,Good,Bengaluru,Indeed,919301397549,aarush.zachariah@gmail.com,Postgraduate,Still Working,31/01/1998,14/03/2024,8/5/2025,NA,3
+100583,Married,Female,FullTime,Machine Learning Engineer,Experienced,Excellent,Bengaluru,Internshala,918778192689,prerak.chana@gmail.com,Postgraduate,Long Working Hours,27/12/1969,3/2/2018,4/17/2025,4/18/2025,24
+101135,Married,Female,FullTime,Human Resource Manager,Experienced,Poor,Hyderabad,Indeed,919667731151,jhanvi.bumb@gmail.com,Graduate,Still Working,23/05/1996,30/05/2020,9/7/2025,NA,7
+100821,Married,Female,FullTime,Software Tester,Experienced,Good,Mumbai,Employee Referral,917357070552,ishaan.deo@gmail.com,Graduate,Still Working,10/9/1977,18/06/2016,12/18/2024,NA,6
+101114,Married,Female,FullTime,Product Manager,Experienced,Good,Bengaluru,Company Website,917465558432,saira.ravel@gmail.com,Postgraduate,Long Working Hours,15/04/1976,21/12/2021,10/29/2024,10/30/2024,21
+106442,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Bengaluru,Internshala,917017464170,akarsh.dara@gmail.com,Graduate,Still Working,26/10/1967,15/12/2022,11/21/2024,NA,19
+106459,Unmarried,Female,FullTime,Software Engineer,Experienced,Good,Gurgaon,Company Website,918529139761,khushi.jha@gmail.com,Graduate,Still Working,10/6/1974,23/09/2020,9/26/2024,NA,2
+106166,Married,Female,FullTime,Data Analyst,Experienced,Excellent,Bengaluru,Indeed,918154164882,aarush.ram@gmail.com,Postgraduate,Still Working,1/9/1984,19/10/2018,6/6/2025,NA,4
+110277,Married,Male,FullTime,Business Analyst,Experienced,Excellent,Bengaluru,Company Website,919053755550,nitya.wali@gmail.com,Postgraduate,Toxic Work Culture,24/09/1982,14/05/2019,5/10/2024,5/11/2024,15
+106590,Married,Male,FullTime,Software Engineer,Experienced,Excellent,Gurgaon,Employee Referral,916088424088,piya.srivastava@gmail.com,Graduate,Still Working,12/3/1985,23/02/2019,10/29/2024,NA,16
+105963,Married,Male,FullTime,Product Manager,Experienced,Good,Gurgaon,Naukri.com,917725398752,jivin.dhaliwal@gmail.com,Postgraduate,Toxic Work Culture,8/5/1994,25/08/2019,10/13/2024,10/14/2024,15
+111680,Unmarried,Male,FullTime,Data Analyst,Experienced,Excellent,Bengaluru,Naukri.com,917670874349,aaryahi.biswas@gmail.com,Postgraduate,Toxic Work Culture,19/01/1995,19/05/2016,1/16/2025,1/17/2025,2
+111336,Married,Male,FullTime,Data Scientist,Experienced,Poor,Hyderabad,Naukri.com,918651221834,aradhya.agate@gmail.com,Postgraduate,Still Working,15/08/1993,29/10/2017,10/10/2024,NA,17
+110287,Married,Female,FullTime,Software Engineer,Experienced,Excellent,Gurgaon,Employee Referral,917861532052,nayantara.viswanathan@gmail.com,Graduate,Still Working,27/10/1991,28/07/2016,4/30/2025,NA,12
+100973,Married,Female,FullTime,Data Scientist,Experienced,Good,Mumbai,LinkedIn,919794634946,ojas.dasgupta@gmail.com,Graduate,Still Working,5/11/1977,25/10/2019,11/3/2025,NA,23
+106029,Married,Female,FullTime,Software Tester,Experienced,Excellent,Hyderabad,Company Website,917774219822,hunar.chandran@gmail.com,Graduate,Toxic Work Culture,25/02/1979,4/8/2021,12/18/2024,12/19/2024,10
+100950,Married,Female,FullTime,Data Scientist,Experienced,Excellent,Bengaluru,Company Website,917922629523,saksham.chandra@gmail.com,Graduate,Still Working,4/1/1983,7/8/2020,10/11/2024,NA,20
+110492,Married,Female,FullTime,Machine Learning Engineer,Experienced,Good,Bengaluru,LinkedIn,917766727400,pihu.shere@gmail.com,Graduate,Still Working,2/9/1966,13/05/2024,11/23/2024,NA,10
+111104,Married,Male,FullTime,Business Analyst,Experienced,Good,Pune,LinkedIn,919012019432,badal.anand@gmail.com,Graduate,Long Working Hours,26/05/1967,25/08/2017,10/7/2025,10/8/2025,16
+100718,Married,Female,FullTime,Software Tester,Experienced,Excellent,Mumbai,Naukri.com,918367761857,yuvraj..kakar@gmail.com,Postgraduate,Still Working,25/09/1989,15/06/2016,10/15/2024,NA,7
+106225,Married,Male,FullTime,Data Scientist,Experienced,Excellent,Gurgaon,Naukri.com,916530097044,chirag.jayaraman@gmail.com,Graduate,Toxic Work Culture,6/4/1990,27/09/2018,6/19/2025,6/20/2025,20
+106518,Married,Male,FullTime,Product Manager,Experienced,Good,Mumbai,Employee Referral,917755778035,kashvi.basak@gmail.com,Postgraduate,Toxic Work Culture,28/04/2002,15/06/2023,7/23/2025,7/24/2025,12
+106073,Married,Male,FullTime,Quality Analyst,Experienced,Excellent,Bengaluru,Indeed,919194126068,shamik.sehgal@gmail.com,Postgraduate,Still Working,16/01/1983,30/01/2018,5/23/2025,NA,9
+100331,Married,Male,FullTime,Business Analyst,Experienced,Good,Hyderabad,LinkedIn,917841841204,siya.chanda@gmail.com,Graduate,Toxic Work Culture,28/10/1988,22/11/2018,3/11/2024,3/12/2024,7
+106257,Married,Female,FullTime,Data Scientist,Experienced,Good,Bengaluru,Employee Referral,918018902977,madhav.srinivas@gmail.com,Graduate,Still Working,22/12/1981,7/5/2020,2/12/2024,NA,22
+111378,Married,Female,FullTime,Marketing Analyst,Experienced,Good,Hyderabad,Naukri.com,918017927713,heer.balan@gmail.com,Graduate,Still Working,21/03/1967,20/02/2024,11/17/2024,NA,8
+100628,Married,Male,FullTime,Quality Analyst,Experienced,Excellent,Pune,Naukri.com,918488581127,dhruv.ravel@gmail.com,Graduate,Still Working,26/01/1993,2/5/2023,9/8/2025,NA,9
+106034,Married,Female,FullTime,Data Analyst,Experienced,Good,Bengaluru,Naukri.com,918237346897,gokul.khare@gmail.com,Graduate,Still Working,18/05/1967,16/11/2018,9/14/2024,NA,13
+106254,Married,Female,FullTime,Business Analyst,Experienced,Good,Bengaluru,Internshala,918719293152,faiyaz.deshmukh@gmail.com,Graduate,Toxic Work Culture,2/1/1994,1/5/2016,2/5/2025,2/6/2025,20
+110433,Married,Female,FullTime,Software Tester,Experienced,Excellent,Mumbai,Indeed,919238162548,damini.kunda@gmail.com,Graduate,Toxic Work Culture,30/09/2000,4/2/2022,3/18/2025,3/19/2025,9
+110744,Married,Male,FullTime,Data Scientist,Experienced,Good,Bengaluru,Internshala,916693671233,tiya.reddy@gmail.com,Graduate,Still Working,20/12/1986,30/07/2017,12/30/2024,NA,17
+106214,Married,Male,FullTime,Business Analyst,Experienced,Good,Bengaluru,Internshala,919236872607,aaina.toor@gmail.com,Graduate,Toxic Work Culture,17/04/1969,4/1/2019,6/28/2025,6/29/2025,14

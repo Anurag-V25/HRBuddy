@@ -1,1 +1,2 @@
-# HRBuddy
+# HR-Buddy
+HR Buddy

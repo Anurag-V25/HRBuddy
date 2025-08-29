@@ -1,0 +1,395 @@
+{
+  "anonymous": {
+    "profile": {
+      "user_id": "anonymous",
+      "role": "UserRole.JUNIOR_DEVELOPER",
+      "department": "IT",
+      "experience_years": 2,
+      "seniority_level": "junior",
+      "specializations": [],
+      "current_projects": [],
+      "learning_goals": [],
+      "preferred_communication_style": "detailed"
+    },
+    "interaction_history": [
+      {
+        "timestamp": "2025-08-26T06:35:13.528351",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T06:36:08.632095",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      }
+    ],
+    "frequent_topics": [],
+    "query_patterns": [],
+    "satisfaction_trends": [],
+    "preferred_detail_level": "medium"
+  },
+  "101185": {
+    "profile": {
+      "user_id": "101185",
+      "role": "UserRole.JUNIOR_DEVELOPER",
+      "department": "IT",
+      "experience_years": 2,
+      "seniority_level": "junior",
+      "specializations": [],
+      "current_projects": [],
+      "learning_goals": [],
+      "preferred_communication_style": "detailed"
+    },
+    "interaction_history": [
+      {
+        "timestamp": "2025-08-26T06:41:40.646832",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T06:41:48.343187",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T06:43:46.107971",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T06:43:51.612866",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T06:47:31.330211",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T06:47:37.862787",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T06:48:11.508150",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T06:48:18.205111",
+        "topic": "policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T06:51:43.977442",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T06:51:47.822906",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T08:03:09.145773",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T08:03:20.824196",
+        "topic": "policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      }
+    ],
+    "frequent_topics": [
+      "policy",
+      "general_inquiry"
+    ],
+    "query_patterns": [],
+    "satisfaction_trends": [],
+    "preferred_detail_level": "medium"
+  },
+  "101185:rag": {
+    "profile": {
+      "user_id": "101185:rag",
+      "role": "UserRole.JUNIOR_DEVELOPER",
+      "department": "IT",
+      "experience_years": 2,
+      "seniority_level": "junior",
+      "specializations": [],
+      "current_projects": [],
+      "learning_goals": [],
+      "preferred_communication_style": "detailed"
+    },
+    "interaction_history": [
+      {
+        "timestamp": "2025-08-26T08:43:35.617503",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T08:43:39.163624",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T08:49:38.325687",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T08:49:43.307599",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:04:00.502249",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:04:06.217116",
+        "topic": "policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:04:43.616610",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:04:50.524742",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:14:49.754013",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:14:56.670488",
+        "topic": "policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:16:53.744451",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:17:00.474838",
+        "topic": "policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:17:39.022675",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:17:45.343156",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:18:14.559696",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:18:20.214816",
+        "topic": "leave_policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:19:49.909013",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:19:53.604822",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T09:20:29.305595",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T09:20:35.787059",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-26T10:30:49.059998",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-26T10:30:54.827607",
+        "topic": "policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-28T05:48:16.877253",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-28T05:48:25.174996",
+        "topic": "leave_policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-28T05:48:44.424384",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-28T05:48:48.443863",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-28T05:58:30.272716",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-28T05:58:36.464104",
+        "topic": "leave_policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-28T05:58:43.074951",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-28T05:58:47.323127",
+        "topic": "general_inquiry",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-28T05:59:01.019152",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      },
+      {
+        "timestamp": "2025-08-28T05:59:06.609702",
+        "topic": "leave_policy",
+        "query_type": "general_hr",
+        "satisfaction": null,
+        "session_length": 2
+      },
+      {
+        "timestamp": "2025-08-28T05:59:28.565916",
+        "topic": null,
+        "query_type": null,
+        "satisfaction": null,
+        "session_length": 0
+      }
+    ],
+    "frequent_topics": [
+      "leave_policy",
+      "general_inquiry",
+      "policy"
+    ],
+    "query_patterns": [],
+    "satisfaction_trends": [],
+    "preferred_detail_level": "medium"
+  }
+}
