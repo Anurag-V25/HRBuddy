@@ -1,22 +1,20 @@
-# app/main.py
+# app.py
 import os
 from pathlib import Path
-from flask import Flask, request, jsonify, redirect, send_from_directory
-import pandas as pd
-from flask import render_template
+from flask import Flask, request, jsonify, redirect, send_from_directory, render_template
 
-# ----------------- Resolve project paths (no .env needed) -----------------
-APP_DIR = Path(__file__).resolve().parent                   # .../Human-Resource-main/app
+# ----------------- Resolve project paths -----------------
+APP_DIR = Path(__file__).resolve().parent                   # .../app
 BASE_DIR = APP_DIR.parent                                   # .../Human-Resource-main
 
 DB_PATH = "data/processed/hr_data.db"
 MODEL_PATH = "models/attrition_pipeline_real.joblib"
 ASSETS_PATH = str(APP_DIR / "assets")
 
-# Ensure dashboard modules see the right DB path (they read from env)
+# Ensure dashboard modules see the right DB path
 os.environ["DB_PATH"] = DB_PATH
 
-# ----------------- Imports that depend on paths above -----------------
+# ----------------- Imports -----------------
 from enhanced_advanced_dashboard import create_enhanced_dashboard
 from chatbot_backend import (
     get_chatbot_response,
@@ -26,28 +24,24 @@ from chatbot_backend import (
 )
 
 # ----------------- Flask -----------------
-server = Flask(__name__)
+server = Flask(__name__, template_folder="templates")
 
-# --------- Static assets (only if you have files under app/assets) -----
+# --------- Static assets (if you have files under app/assets) -----
 @server.route("/assets/<path:filename>")
 def serve_assets(filename):
     return send_from_directory(ASSETS_PATH, filename)
 
-# ----------------- Dashboard (unchanged UI) -----------------
+# ----------------- Dashboard -----------------
 app = create_enhanced_dashboard(server)
 
 @server.route("/")
 def index():
     return redirect("/dashboard/")
 
-# ================== New: Attrition APIs ===================
+# ================== Attrition APIs ===================
 
 @server.route("/api/attrition/predict", methods=["POST"])
 def api_predict_single():
-    """
-    Body: {"employee_id": 111065, "horizon_days": 60}
-    Allowed horizons: 30,40,50,60,90,180
-    """
     try:
         data = request.get_json(force=True) or {}
         employee_id = int(data.get("employee_id"))
@@ -59,12 +53,8 @@ def api_predict_single():
     except Exception as e:
         return jsonify({"error": f"Failed to predict: {e}"}), 500
 
-
 @server.route("/api/attrition/predict/bulk", methods=["POST"])
 def api_predict_bulk():
-    """
-    Body: {"filters":{"department":"Engineering"}, "horizon_days":60, "limit":50}
-    """
     try:
         data = request.get_json(force=True) or {}
         filters = data.get("filters", {}) or {}
@@ -77,18 +67,8 @@ def api_predict_bulk():
     except Exception as e:
         return jsonify({"error": f"Failed to bulk predict: {e}"}), 500
 
-
 @server.route("/api/attrition/action-plan", methods=["POST"])
 def api_action_plan():
-    """
-    Body:
-    {
-      "employee_id": 111065,
-      "actions": [
-        {"action_type":"Manager 1:1","owner_role":"Manager","sla_days":3,"expected_impact":3,"cost_band":"₹","notes":"High workload"}
-      ]
-    }
-    """
     try:
         data = request.get_json(force=True) or {}
         employee_id = int(data.get("employee_id"))
@@ -100,31 +80,30 @@ def api_action_plan():
     except Exception as e:
         return jsonify({"error": f"Failed to create plan: {e}"}), 500
 
+# ================== Chatbot endpoint ===================
 
-# ================== Chatbot endpoint (button-driven) ===================
 
 @server.route("/api/chatbot", methods=["POST"])
 def chatbot_endpoint():
     """
-    Body: {"message":"Predict risk (60 days)","role":"hr"}
+    Body: {"message":"Predict risk (60 days)","role":"hr", "user_name": "Shilpa", "session_id": "abc123", "profile": {"full_name": "Shilpa Rao"}}
     role: employee | manager | hr | admin
     """
     try:
         data = request.get_json(force=True) or {}
         msg = (data.get("message") or "").strip()
         role = (data.get("role") or "hr").lower()
+        user_name = data.get("user_name", "")
+        session_id = data.get("session_id", None)
+        profile = data.get("profile", None)
         if not msg:
             return jsonify({"error": "Message cannot be empty"}), 400
-        response = get_chatbot_response(msg, role=role)
+        response = get_chatbot_response(msg, role=role, user_name=user_name, session_id=session_id, profile=profile)
         return jsonify(response)
     except Exception:
         return jsonify({"message": "Sorry, I'm having trouble right now.", "response_type": "text", "confidence": 0.0}), 500
 
-
-# ================== Health ===================
-
-
+# ================== Chatbot Page ===================
 @server.route("/chat/attrition")
 def chat_attrition():
     return render_template("attration.html")
-

@@ -35,7 +35,25 @@ DB_PATH = os.getenv("HR_DB_PATH", "data/processed/hr_data.db")
 CSV_PATH = os.getenv("HR_CSV_PATH", "data/Indian_IT_Employee_Dataset_updated.csv")
 MAX_ROWS = 500
 
-# ---------------- GREETING HANDLING FUNCTIONS ----------------
+from threading import Lock
+
+# ---------------- SESSION/PROFILE MANAGEMENT (like onboarding) ----------------
+_CHATBOT_SESSIONS = {}
+_CHATBOT_SESSIONS_LOCK = Lock()
+
+def get_or_create_profile(session_id: str, profile: dict = None) -> dict:
+    """Get or create a profile for the session."""
+    with _CHATBOT_SESSIONS_LOCK:
+        if session_id in _CHATBOT_SESSIONS:
+            prof = _CHATBOT_SESSIONS[session_id]
+            # Optionally update with new info
+            if profile:
+                prof.update(profile)
+            return prof
+        else:
+            prof = profile.copy() if profile else {}
+            _CHATBOT_SESSIONS[session_id] = prof
+            return prof
 def is_greeting(message: str) -> bool:
     """Check if the message is a simple greeting"""
     greeting_patterns = [
@@ -533,15 +551,36 @@ def attrition_agent(employee_id: int, horizon_days: int = 60) -> Dict[str, Any]:
 def get_chatbot_response(message: str, role: str = "hr") -> Dict[str, Any]:
     """Enhanced main entry point with greeting handling and simplified intelligence"""
     try:
+        import inspect
+        frame = inspect.currentframe()
+        session_id = None
+        user_name = ""
+        profile = None
+        if frame is not None:
+            args, _, _, values = inspect.getargvalues(frame)
+            session_id = values.get('session_id', None)
+            user_name = values.get('user_name', "")
+            profile = values.get('profile', None)
         msg = (message or "").strip()
-        
+
+        # Session/profile logic
+        prof = {}
+        if session_id:
+            prof = get_or_create_profile(session_id, profile)
+        elif profile:
+            prof = profile
+
+        # Prefer full_name from profile, else user_name, else "there"
+        name = (prof.get("full_name") or user_name or "Shilpa").split()[0]
+
         # Check for greeting first - NEW FEATURE
         if is_greeting(msg):
             return pack(ChatbotResponse(get_greeting_response(), "text", confidence=1.0))
-        
+
         if not msg or msg.lower() in {"start"}:
             welcome = (
-                "👋 Welcome to Enhanced HR Buddy.\n"
+                f"👋 Hi {name}!\n"
+                "Welcome to HR Buddy🙂\n"
                 "I can analyze your employee data and provide **industry insights**.\n\n" +
                 examples()
             )

@@ -488,7 +488,7 @@ function logPerformance() {
 // Error handling
 window.addEventListener('error', function(e) {
     console.error('❌ Dashboard Error:', e.error);
-    showNotification('An error occurred. Please refresh the page.', 'error');
+    showNotification('Please wait the dashbaord is loading.', 'error');
 });
 
 // Unload cleanup
