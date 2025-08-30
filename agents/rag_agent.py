@@ -222,8 +222,28 @@ class RagAgent:
 
         return [(d, best_cos.get(id(d), -1)) for d in docs]
 
+    COMMON_MISSPELLINGS = {
+        "passrwd": "password",
+        "intall": "install",
+        "emial": "email",
+        "onbording": "onboarding",
+        "benifits": "benefits",
+        "attandance": "attendance",
+        "referal": "referral",
+        "promtion": "promotion",
+        "leavs": "leaves",
+        # Add more as needed
+    }
+
+    def correct_common_typos(self, text: str) -> str:
+        words = text.split()
+        corrected = [self.COMMON_MISSPELLINGS.get(w.lower(), w) for w in words]
+        return " ".join(corrected)
+
     def _answer_hr(self, query: str) -> Tuple[str, Dict[str, Any]]:
-        # Autocorrect user query before processing
+        # First, correct common HR/IT typos
+        query = self.correct_common_typos(query)
+        # Then, autocorrect with TextBlob for general spelling
         corrected_query = str(TextBlob(query).correct())
         q = (corrected_query or "").strip()
         if not q:
