@@ -7,6 +7,7 @@ import json
 from datetime import datetime, timedelta, timezone
 from typing import Optional, Dict, Tuple
 from pathlib import Path
+from enum import Enum, auto
 
 import pandas as pd
 from flask import Flask, jsonify, request
@@ -16,7 +17,7 @@ import jwt
 
 # --- Your agents/modules ---
 from agents.onboarding_agent import OnboardingAgent
-from agents.rag_agent import create_enhanced_rag_agent, UserProfile, UserRole
+from agents.rag_agent import RagAgent
 from enhanced_advanced_dashboard import create_enhanced_dashboard
 from flask import Flask, request, jsonify
 from chatbot_backend import get_chatbot_response, health
@@ -101,23 +102,7 @@ def decide_next_route(designation: str, days_since_doj: Optional[int]) -> str:
         return "employee_chat"
     return "employee_chat"
 
-def map_designation_to_userrole(designation: str) -> UserRole:
-    d = (designation or "").strip().lower()
-    if d in {"intern", "trainee", "fresher", "freshers"}:
-        return UserRole.INTERN
-    if "qa" in d:
-        return UserRole.QA_ENGINEER
-    if "devops" in d or "sre" in d:
-        return UserRole.DEVOPS_ENGINEER
-    if "architect" in d:
-        return UserRole.ARCHITECT
-    if "lead" in d or "manager" in d or "tl" in d:
-        return UserRole.TEAM_LEAD
-    if "product" in d:
-        return UserRole.PRODUCT_MANAGER
-    if "senior" in d or "sr" in d:
-        return UserRole.SENIOR_DEVELOPER
-    return UserRole.JUNIOR_DEVELOPER
+
 
 # ===========================
 # Helpers: JWT
@@ -299,7 +284,7 @@ CORS(app, resources={r"/*": {"origins": "*"}})
 
 # Agents
 onboarding = OnboardingAgent(EXCEL_PATH)
-rag = create_enhanced_rag_agent()
+rag = RagAgent()  # Initialize the RAG agent
 
 # Dashboard
 create_enhanced_dashboard(app)
@@ -418,17 +403,6 @@ def api_chat():
         return jsonify({"reply": pretty, "meta": {}, "agent": "smalltalk"}), 200
 
     # Build a (currently unused) UserProfile for future personalization
-    rag_user_profile = UserProfile(
-        user_id=employee_id or claims.get("email") or "anonymous",
-        role=map_designation_to_userrole(profile.get("designation") or ""),
-        department="IT",
-        experience_years=1 if profile.get("days_since_doj") is None else max(1, int((profile["days_since_doj"] or 0) // 365 or 1)),
-        seniority_level="junior",
-        specializations=[],
-        current_projects=[],
-        learning_goals=[],
-        preferred_communication_style="concise",
-    )
 
     # Explicit onboarding mode (button/URL controlled)
     # Explicit onboarding mode (button/URL controlled)
@@ -468,10 +442,8 @@ def api_chat():
 
     # derive a deterministic RAG thread per employee and call using only supported kwargs
     rag_session_id = f"{employee_id}:rag" if employee_id else session_id
-    answer, meta = rag.answer_with_context(
+    answer, meta = rag.answer_any(
         text,
-        session_id=rag_session_id,
-        feedback=feedback,
     )
 
     pretty = _format_for_ui(answer, meta)
@@ -647,5 +619,5 @@ def api_onboarding_action():
 # Run
 # ===========================
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "8000"))
+    port = int(os.getenv("PORT", "5000"))
     app.run(host="0.0.0.0", port=port, debug=True)

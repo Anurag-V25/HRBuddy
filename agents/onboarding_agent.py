@@ -367,7 +367,7 @@ class _NewOnboardingAgentic:
         # Org policy → RAG (if provided), else short note
         if label == "org_policy":
             if rag is not None:
-                ans, rmeta = rag.answer_with_context(m, session_id=session_id)
+                ans, rmeta = rag.answer_any(m)
                 # Ensure consistent structure
                 rmeta = rmeta or {}
                 rmeta.update({"agent": "new", "intent": "org_policy", "used_serp": False})
@@ -651,7 +651,7 @@ class OnboardingAgent:
         label = self._intent_for_router.classify(message or "")
         if label == "org_policy":
             if rag is not None:
-                ans, meta = rag.answer_with_context(message, session_id=session_id)
+                ans, meta = rag.answer_any(message)
                 meta = meta or {}
                 meta.update({"agent": self._route(profile), "intent": "org_policy", "used_serp": False})
                 return ans, meta
@@ -688,7 +688,7 @@ class OnboardingAgent:
         if action == "rag":
             question = (value or "").strip() or "I have a question about HR/Org policy."
             if rag is not None:
-                return rag.answer_with_context(question, session_id=session_id)
+                return rag.answer_any(question)
             return "RAG is not connected right now.", {"error": "rag_unavailable"}
 
         # default: treat as user turn
