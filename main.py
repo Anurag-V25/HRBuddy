@@ -505,62 +505,37 @@ def api_chatbot():
     try:
         payload = request.get_json(silent=True) or {}
         message = (payload.get("message") or "").strip()
-        role = (payload.get("role") or "hr").lower()
+        session_id = payload.get("session_id", "default")
+        profile = payload.get("profile", {})
+        user_name = payload.get("user_name", "there")
 
+        # Default welcome message if nothing typed
         if not message:
+            welcome = (
+                f"👋 Hi {profile.get('full_name', user_name or 'there').split()[0]}!\n"
+                "Welcome to HR Buddy 🙂\n"
+                "I can help you with HR metrics and Employee attrition analysis."
+            )
             return jsonify({
-                "message": "👋 Hi! Ask: 'Overall attrition rate', 'Top resignation reasons', 'Average tenure by job role', or 'Recommendations to reduce attrition'.",
+                "message": welcome,
                 "response_type": "text",
                 "data": {},
-                "confidence": 0.95
+                "confidence": 1.0
             }), 200
 
-        out = get_chatbot_response(message, role=role)
+        # Get response from backend
+        out = get_chatbot_response(message, session_id=session_id, user_name=user_name, profile=profile)
+
         return jsonify({
             "message": out.get("message", ""),
-            "response_type": out.get("response_type", "text"),
-            "data": out.get("data") or {},
-            "confidence": float(out.get("confidence", 0.0)),
-            "quick_replies": []  # future: add suggested follow-ups here
+            "response_type": out.get("type", "text"),
+            "data": {},  # no table data anymore
+            "confidence": float(out.get("confidence", 0.9))
         }), 200
 
     except Exception as e:
         return jsonify({
-            "message": "Sorry, I’m having trouble right now.",
-            "response_type": "text",
-            "data": {"error": str(e)},
-            "confidence": 0.0
-        }), 200
-
-def api_chatbot():
-    try:
-        payload = request.get_json(silent=True) or {}
-        message = (payload.get("message") or "").strip()
-        role = payload.get("role", "hr")
-
-        # Basic guard
-        if not message:
-            return jsonify({
-                "message": "Please type a question. For example: 'Overall attrition rate' or 'Top resignation reasons (chart)'.",
-                "response_type": "text",
-                "data": {},
-                "confidence": 0.9
-            }), 200
-
-        out = get_chatbot_response(message, role=role)
-        # Ensure shape
-        resp = {
-            "message": out.get("message", ""),
-            "response_type": out.get("response_type", "text"),
-            "data": out.get("data") or {},
-            "confidence": float(out.get("confidence", 0.0)),
-            "quick_replies": []  # optional: fill with suggested follow-ups
-        }
-        return jsonify(resp), 200
-    except Exception as e:
-        # Never leak stack traces to UI
-        return jsonify({
-            "message": "Sorry, I’m having trouble right now.",
+            "message": "⚠️ Sorry, I’m having trouble right now. Please try again.",
             "response_type": "text",
             "data": {"error": str(e)},
             "confidence": 0.0
@@ -619,5 +594,5 @@ def api_onboarding_action():
 # Run
 # ===========================
 if __name__ == "__main__":
-    port = int(os.getenv("PORT", "5000"))
+    port = int(os.getenv("PORT", "8000"))
     app.run(host="0.0.0.0", port=port, debug=True)

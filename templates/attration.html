@@ -12,12 +12,12 @@
   * { font-family: 'Poppins', sans-serif; }
 
   .launcher {
-    position:fixed; right:22px; bottom:22px; width:56px; height:56px;
+    position:fixed; right:51px; bottom:51px; width:0px; height:0px;
     border-radius:50%; cursor:pointer; display:flex; align-items:center; justify-content:center;
     background:var(--primary); box-shadow:0 8px 25px rgba(0,0,0,.2);
     z-index:1000; transition:all .2s ease;
   }
-  .launcher img { width:50px; height:64px; object-fit:contain; }
+  .launcher img { width:80px; height:90px; object-fit:contain; }
   .launcher:hover { transform:scale(1.05); }
 
   .widget {
@@ -139,7 +139,7 @@ function addMsg(text,who="bot",chips=[]){
     ava.innerHTML=`<img src="https://marketplace.canva.com/_o3Sg/MAGaMB_o3Sg/1/tl/canva-3d-robot-character-reading-a-book-illustration-MAGaMB_o3Sg.png"/>`;
     wrap.appendChild(ava);
   }
-  const msg=document.createElement("div");msg.className="msg "+who;msg.innerHTML=mdToHtml(text);
+  const msg=document.createElement("div");msg.className="msg "+who;msg.innerHTML=mdToHtml(text.replace(/\n/g, "<br>"));
   wrap.appendChild(msg);feed.appendChild(wrap);
 
   const ts=document.createElement("div");

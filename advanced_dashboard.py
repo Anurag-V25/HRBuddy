@@ -12,7 +12,8 @@ import dash_bootstrap_components as dbc
 import plotly.express as px
 import plotly.graph_objects as go
 
-# --- Resolve DB path robustly: prefer env, else default to repo path ---
+ # --- Resolve DB path robustly: prefer env, else default to repo path ---
+USD_CONVERSION_RATE = 83  # 1 USD = 83 INR (update as needed)
 BASE_DIR = Path(__file__).resolve().parents[1]  # .../Human-Resource-main
 DEFAULT_DB = "data/processed/hr_data.db"
 DB_PATH = os.environ.get("DB_PATH", str(DEFAULT_DB))
@@ -203,22 +204,14 @@ def financial_kpi_card(title, value, color_class, description=""):
 
 
 def _format_inr_short(amount: float) -> str:
-    """Format a numeric amount to a short INR string using L/Cr suffixes.
-    Examples: 125000 -> ₹1.3L, 25000000 -> ₹2.5Cr, 95000 -> ₹95,000
-    """
+    """Format a numeric amount to a short USD string only."""
     try:
         value = float(amount)
     except Exception:
-        return "₹0"
-
-    crore = 10_000_000
-    lakh = 100_000
-    if value >= crore:
-        return f"₹{value / crore:.1f}Cr"
-    if value >= lakh:
-        return f"₹{value / lakh:.1f}L"
-    # Fallback with Indian comma formatting
-    return "₹" + f"{int(round(value)):,}".replace(",", ",")
+        return "$0"
+    usd = value / USD_CONVERSION_RATE
+    usd_str = f"${usd:,.1f}"
+    return usd_str
 
 
 def create_chart_1_financial_impact(df):
