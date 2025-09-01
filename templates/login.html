@@ -5,8 +5,51 @@
   <meta name="viewport" content="width=device-width,initial-scale=1"/>
   <title>HR Buddy · Sign in</title>
   <link rel="stylesheet" href="{{ url_for('static', filename='login.css') }}">
+  <style>
+    .corner-logo {
+      position: fixed;
+      z-index: 10;
+      opacity: 0.85;
+      pointer-events: none;
+      filter: drop-shadow(0 0 16px #00e6ff88);
+      animation: glow-pulse 3s ease-in-out infinite alternate;
+    }
+    .corner-logo.left {
+      top: 32px;
+      left: 32px;
+      width: 200px;
+      height: auto;
+    }
+    .corner-logo.right {
+      top: 32px;
+      right: 32px;
+      width: 200px;
+      height: auto;
+    }
+    @keyframes glow-pulse {
+      0% {
+        filter: drop-shadow(0 0 8px #d155f0) drop-shadow(0 0 16px #4dd0e1);
+      }
+      100% {
+        filter: drop-shadow(0 0 24px #d155f0) drop-shadow(0 0 32px #4dd0e1);
+      }
+    }
+    @media (max-width: 600px) {
+      .corner-logo.left, .corner-logo.right {
+        width: 40px;
+        top: 12px;
+        left: 12px;
+        right: 12px;
+      }
+    }
+  </style>
 </head>
 <body>
+  <!-- Left corner logo -->
+  <img src="/static/HTK.png" alt="Realise AI" class="corner-logo left">
+  <!-- Right corner logo -->
+  <img src="static/RealiseAI.png" alt="Hoonartek" class="corner-logo right">
+
   <div class="page">
     <div class="card">
       <div class="brand">

@@ -41,7 +41,7 @@ def is_greeting(message: str) -> bool:
     return any(re.search(p, msg) for p in pats)
 
 def greeting_text(name: str) -> str:
-    return f"👋 Hi {name}! How can I help you with HR analytics today?"
+    return f"👋 Hi Shilpa! How can I help you with HR analytics today?"
 
 # ---------------- Memory ----------------
 def init_memory_table():
@@ -206,7 +206,7 @@ def get_chatbot_response(message:str,session_id="default",user_name="there",prof
     prof=get_or_create_profile(session_id,profile); name=(prof.get("full_name") or user_name).split()[0]
 
     if not text or text.lower()=="start":
-        msg=f"👋 Hi {name}!\nWelcome to HR Buddy 🙂\nI can help with HR metrics and attrition analysis."
+        msg=f"👋 Hi Shilpa!\nWelcome to HR Buddy 🙂\nI can help with HR metrics and attrition analysis."
         update_memory(session_id,text,msg); return {"message":msg,"type":"text"}
 
     if is_greeting(text):

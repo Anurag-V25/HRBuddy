@@ -4,6 +4,7 @@ import os
 from typing import List, Tuple, Dict, Any
 from pathlib import Path
 from collections import defaultdict
+from rapidfuzz import fuzz
 
 # --- LLM (Gemini) ------------------------------------------------------------
 import google.generativeai as genai
@@ -12,6 +13,7 @@ import google.generativeai as genai
 from langchain_community.vectorstores import FAISS
 from langchain_community.embeddings import HuggingFaceEmbeddings
 from textblob import TextBlob
+import re
 
 # ===========================
 # Configuration / Constants
@@ -37,6 +39,10 @@ FALLBACK = (
 HR_PERSONA = (
     "You are ARIA, Hoonartek’s HR assistant. Your user is an IT employee. "
     "Be clear, friendly, and strictly policy‑accurate. Only use the given context."
+    "Always try to answer HR-related queries first, especially if they mention policies like leave, dress code, attendance, probation, promotion, referral, travel, or WFH."
+    "Only say 'not related' if the query is clearly outside HR (e.g., politics, sports, weather)."
+    "Respond in short, professional sentences (no bullets, no headings)."
+    "If info is missing, say: 'Not specified in the retrieved documents.'"
 )
 
 def _maybe_init_gemini() -> bool:
@@ -312,20 +318,30 @@ class RagAgent:
 
         return answer, {"followup_offered": False}
 
-    def _detect_policy_topic(self, user_query: str) -> str | None:
-        """Detect if the query is about a known HR policy topic. Returns topic key or None."""
+    def _detect_policy_topic(self, user_query: str) -> Optional[str]:
         q = (user_query or "").lower()
+
         topics = {
-            "leave": ["leave", "leaves", "vacation", "pto"],
-            "dress_code": ["dress code", "attire", "clothing"],
-            "attendance": ["attendance", "late", "absent", "timesheet"],
-            "probation": ["probation", "confirmation"],
-            "promotion": ["promotion", "promote", "nomination"],
-            "referral": ["referral", "refer", "recommendation program"],
-            "wfh": ["wfh", "work from home", "remote work", "hybrid"],
-            "travel_expense": ["travel", "expense", "reimbursement", "ta", "da"],
+            "leave": ["leave", "vacation", "holiday", "paid time off", "pto", "earned leave", "sick leave", "casual leave", "annual leave"],
+            "dress_code": ["dress code", "attire", "clothing", "uniform", "grooming", "appearance", "business casual", "formal wear", "what to wear"],
+            "attendance": ["attendance", "timesheet", "absent", "working hours", "office hours", "shift timing", "punch in", "punch out"],
+            "probation": ["probation", "confirmation", "probation period"],
+            "promotion": ["promotion", "promote", "career growth", "progression"],
+            "referral": ["referral", "employee referral", "referral bonus", "refer a friend"],
+            "wfh": ["wfh", "work from home", "remote work", "hybrid work", "telecommute", "flexible work"],
+            "travel_expense": ["travel", "expense", "reimbursement", "business trip", "claim", "travel allowance", "ta da", "lodging", "conveyance"],
         }
+
+        # Exact/regex match first
         for key, kws in topics.items():
-            if any(kw in q for kw in kws):
-                return key
+            for kw in kws:
+                if re.search(rf"\b{re.escape(kw)}\b", q):
+                    return key
+
+        # Fuzzy match fallback
+        for key, kws in topics.items():
+            for kw in kws:
+                if fuzz.partial_ratio(q, kw) > 80:
+                    return key
+
         return None

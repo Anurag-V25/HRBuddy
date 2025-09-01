@@ -174,7 +174,7 @@ async function sendMsg(text,showUser=true){
     let sessionId = localStorage.getItem("session_id") || sessionStorage.getItem("session_id");
     if(!userName){
       // Prompt for name if not set (optional: replace with your login logic)
-      userName = prompt("Please enter your name for a personalized experience:") || "there";
+      userName = prompt("Please enter your name for a personalized experience:") || "Shilpa";
       localStorage.setItem("user_name", userName);
     }
     if(!sessionId){

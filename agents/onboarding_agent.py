@@ -367,11 +367,18 @@ class _NewOnboardingAgentic:
         # Org policy → RAG (if provided), else short note
         if label == "org_policy":
             if rag is not None:
-                ans, rmeta = rag.answer_any(m)
-                # Ensure consistent structure
-                rmeta = rmeta or {}
-                rmeta.update({"agent": "new", "intent": "org_policy", "used_serp": False})
-                return ans, rmeta
+                ans, meta = rag.answer_with_context(m, session_id=session_id)
+        
+        # 🔹 After answering, remind user to continue onboarding
+                reminder = ""
+                if st.step == 1:
+                    reminder = "\n\n📱 Would you like to continue with your **mobile number** verification?"
+                elif st.step == 2:
+                    reminder = "\n\n📧 Would you like to continue with your **email** verification?"
+                elif st.step in (3, 4):
+                    reminder = "\n\n📄 Would you like to continue with your **document upload / FAQs**?"
+                
+                return ans + reminder, {**(meta or {}), "agent": "pre"}
             else:
                 note = (
                     "I can route org-policy queries to our knowledge base, but it’s not connected right now. "
@@ -528,8 +535,10 @@ class _PreOnboardingFlow:
                         f"Now please upload these 3 documents at {SHAREPOINT_UPLOAD_URL}:\n"
                         "• PAN\n"
                         "• Aadhaar\n"
-                        "• Educational Certificates"
+                        "• Educational Certificates\n\n"
+                        "Do you want to know more about hoonartek policies?"
                     )
+                    # ✅ add FAQ + feedback buttons
                     quick = [{"label": q, "send": q} for q in QUICK_FAQ]
                     quick.append({"label": "Move to Feedback", "send": "move to feedback"})
                     return msg, {"progress": st.progress, "actions": quick, "agent": "pre"}
@@ -571,9 +580,10 @@ class _PreOnboardingFlow:
                 if key in ml:
                     return ans, {"progress": st.progress, "agent": "pre"}
 
+            # ✅ explicit FAQ + feedback buttons
             quick = [{"label": q, "send": q} for q in QUICK_FAQ]
             quick.append({"label": "Move to Feedback", "send": "move to feedback"})
-            return ("Ask me about reporting location, dress code, working hours, or manager.",
+            return ("Great, You can ask me about our company, policies, or benefits. etc.:\n",
                     {"progress": st.progress, "actions": quick, "agent": "pre"})
 
         # ===== Step 5: Feedback =====

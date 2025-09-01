@@ -31,3 +31,4 @@ google-generativeai
 duckduckgo_search
 langchain_huggingface
 textblob
+rapidfuzz

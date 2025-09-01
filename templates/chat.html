@@ -31,7 +31,7 @@
       height: 100vh; 
       z-index: -1;
       top: 0; left: 0;
-      background: linear-gradient(135deg, #0a4d54 0%, #065a63 50%, #0a4d54 100%);
+      background: linear-gradient(135deg, #000000 0%, #000000 50%, #000000 100%);
       overflow: hidden;
     }
 
@@ -670,11 +670,30 @@
 <body>
 
 <!-- Theme Background -->
-<div class="theme-background">
+  <div class="theme-background">
   <div class="center-logo">
-    <div class="logo-text">Hoonartek</div>
-    <div class="main-text">Realize AI</div>
+    <img src="static/RealiseAI.png" alt="Realize AI" class="main-img shine" style="width:400px;max-width:100vw;margin-top:1.5rem;">
   </div>
+
+  <!-- Top-left logo -->
+  <div class="corner-logo">
+    <img src="static/HTK.png" alt="Hoonartek" class="logo-img shine" style="width:300px;max-width:90vw;margin-top:1rem;">
+  </div>
+    /* Corner Logo Styling */
+    .corner-logo {
+      position: fixed;
+      top: 20px;
+      left: 20px;
+      z-index: 2;
+      pointer-events: none;
+    }
+    .corner-logo .logo-img {
+      width: 48px;
+      max-width: 6vw;
+      filter: drop-shadow(0 0 16px #00e6ff88);
+      animation: glow-pulse 3s ease-in-out infinite alternate;
+    }
+</div>
   
   <!-- Technology Elements -->
   <div class="tech-elements">
