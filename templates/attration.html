@@ -101,9 +101,9 @@
       <div class="h-title">HR Buddy</div>
     </div>
     <div class="h-actions">
-      <button id="refresh" title="Refresh Chat">↻</button>
-      <button id="minimize" title="Minimize">–</button>
-      <button id="close" title="Close">×</button>
+  <button id="refresh" title="Refresh Chat">↻</button>
+  <button id="minimize" title="Minimize">–</button>
+  <button id="close" title="Close">×</button>
     </div>
   </div>
   <div class="body" id="feed"></div>
@@ -114,15 +114,18 @@
 </div>
 
 <script>
+
 const launch=document.getElementById("launch");
 const widget=document.getElementById("widget");
-const closeBtn=document.getElementById("close");
+// const closeBtn=document.getElementById("close");
 const minimizeBtn=document.getElementById("minimize");
 const refreshBtn=document.getElementById("refresh");
 const feed=document.getElementById("feed");
 const box=document.getElementById("box");
 const sendBtn=document.getElementById("send");
 const API_URL="/api/chatbot";
+
+let chatStarted = false;
 
 function mdToHtml(text=""){ try{ return marked.parse(text);} catch(e){ return text.replace(/\\n/g,"<br>"); }}
 
@@ -191,8 +194,26 @@ async function sendMsg(text,showUser=true){
 sendBtn.onclick=()=>{sendMsg(box.value.trim(),true);box.value="";};
 box.addEventListener("keypress",e=>{if(e.key==="Enter"&&!e.shiftKey){e.preventDefault();sendBtn.click();}});
 
-launch.onclick=()=>{widget.style.display="flex";launch.style.display="none";sendMsg("start",false);};
-closeBtn.onclick=()=>{widget.style.display="none";launch.style.display="flex";};
+launch.onclick=()=>{
+  widget.style.display="flex";
+  launch.style.display="none";
+  if (!chatStarted) {
+    sendMsg("start",false);
+    chatStarted = true;
+  }
+};
+const closeBtn = document.getElementById("close");
+if (closeBtn) {
+  closeBtn.onclick = () => {
+    widget.style.display = "none";
+    launch.style.display = "flex";
+    // Do NOT reset chatStarted or session; just hide the widget
+  };
+}
 minimizeBtn.onclick=()=>{widget.style.display="none";launch.style.display="flex";};
-refreshBtn.onclick=()=>{feed.innerHTML="";sendMsg("start",false);};
+refreshBtn.onclick=()=>{
+  feed.innerHTML="";
+  sendMsg("start",false);
+  chatStarted = true;
+};
 </script>

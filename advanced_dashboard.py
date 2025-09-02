@@ -274,7 +274,7 @@ def create_chart_3_workforce_roi(df):
 
 
 def create_chart_4_forecast(df):
-    months = pd.to_datetime(pd.date_range('2025-02-01', periods=12, freq='M')).strftime('%b')
+    months = pd.to_datetime(pd.date_range('2025-02-01', periods=12, freq='ME')).strftime('%b')
     
     # ✅ Use actual attrition rate as baseline
     current_attrition_rate = df['attrition'].mean() * 100
@@ -470,7 +470,7 @@ def create_chart_17_compensation_analytics(df):
 
 
 def create_chart_18_workforce_planning(df):
-    months = pd.to_datetime(pd.date_range('2025-02-01', periods=12, freq='M')).strftime('%b')
+    months = pd.to_datetime(pd.date_range('2025-02-01', periods=12, freq='ME')).strftime('%b')
     forecast = [len(df) + np.random.randint(-5, 10) + i for i in range(12)]
     fig = px.line(x=months, y=forecast, markers=True, labels={'x': 'Month', 'y': 'Projected Headcount'})
     return dcc.Graph(figure=fig, config={'displayModeBar': False})

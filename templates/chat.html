@@ -890,10 +890,11 @@ function refreshAttach(){
 }
 
 // Event Listeners
+
 launch.onclick = ()=>{ 
   widget.classList.remove('hidden'); 
   launch.classList.add('hidden'); 
-  start(); 
+  // Do NOT call start() here; just show the chat UI
 };
 
 qs("#min").onclick = ()=>{ 
