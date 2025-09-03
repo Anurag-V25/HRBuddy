@@ -139,7 +139,7 @@ class IntentAgent:
             try:
                 model = genai.GenerativeModel("gemini-1.5-flash")
                 prompt = (
-                    "Classify the user message into exactly one label: "
+                    "Classify the user message into exactly one label:"
                     "'stay', 'food', 'project_allocation', 'project_location', 'org_policy', or 'other'. "
                     "Return only the label.\n\n"
                     f"Message: {user_input!r}"
@@ -200,7 +200,7 @@ class StayFoodAgent:
 
     def _format(self, items: List[Dict], header: str) -> Tuple[str, List[Dict]]:
         if not items:
-            return ("Sorry, I couldn’t find results right now. Please try broader keywords.", [])
+            return ("Sorry, I couldn’t find results right now. Please try other query.", [])
         lines = [header, ""]
         enriched = []
         for i, it in enumerate(items[:10], 1):
