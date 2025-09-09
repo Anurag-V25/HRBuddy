@@ -364,9 +364,8 @@ def create_chart_10_compensation(df):
     comp_data['monthlysalary'] = comp_data['monthlysalary'].apply(lambda x: f"{x/1000:.3f}k")
     fig = px.scatter(comp_data, x='monthlysalary', y='riskscore', size='riskscore', color='jobrole',
                      labels={'monthlysalary': 'Average Salary', 'riskscore': 'Average Risk Score'})
-    fig.update_traces(hovertemplate='jobrole=%{marker.color}<br>Average Salary=%{x}<br>Average Risk Score=%{y:.2f}')
+    fig.update_traces(hovertemplate='Average Salary=%{x}<br>Average Risk Score=%{y:.2f}')
     return dcc.Graph(figure=fig, config={'displayModeBar': False})
-
 
 def create_chart_11_learning_roi(df):
     training_impact = df.groupby('training_bins').agg(

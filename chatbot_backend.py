@@ -87,6 +87,9 @@ def gemini_short_insight(user_text: str) -> str:
         "- Executive, professional tone\n"
         "- Focus on actionable recommendation or risk\n"
         "- Do NOT explain methodology or assumptions\n"
+        "- Do Not display like Explainability is a plus\n"
+        "- If no insight, return proper fallback\n"
+        "- Avoid phrases like 'As an AI model'\n"
     )
     resp = gemini_generate(prompt)
     if not resp: return ""
@@ -164,17 +167,39 @@ def predict_attrition(emp:int,horizon:int=60)->Dict[str,Any]:
 
 # ---------------- Explainability ----------------
 def explain_attrition(emp:int)->str:
-    model=load_attrition_model(); row=fetch_row(emp)
-    if row is None: return f"❌ Employee {emp} not found"
-    if not model: return "Explainability not available."
-    try:
-        if hasattr(model,"feature_importances_"):
-            imp=model.feature_importances_; cols=list(getattr(model,"feature_names_in_",row.index))
-            top=np.argsort(imp)[::-1][:5]
-            expl="\n".join([f"• {cols[i]} ({imp[i]:.2f})" for i in top])
+    model = load_attrition_model()
+    row = fetch_row(emp)
+    if row is None:
+        return f"❌ Employee {emp} not found"
+
+    # If model supports explainability
+    if model and hasattr(model,"feature_importances_"):
+        try:
+            imp = model.feature_importances_
+            cols = list(getattr(model,"feature_names_in_", row.index))
+            top = np.argsort(imp)[::-1][:5]
+            expl = "\n".join([f"• {cols[i]} ({imp[i]:.2f})" for i in top])
             return f"📊 Key Attrition Drivers for {emp}\n\n{expl}"
-    except: pass
-    return "Explainability not supported."
+        except:
+            pass
+
+    # ✅ Heuristic explanation fallback
+    reasons = []
+    if str(row.get("PerformanceRating","")).lower() in {"poor","2"}:
+        reasons.append("low recent performance")
+    if str(row.get("EmploymentStatus","")).lower() == "outsource":
+        reasons.append("outsourced employment status")
+    if float(row.get("YearsOfExperience") or 0) < 2:
+        reasons.append("limited tenure/experience")
+    if str(row.get("JobRole","")).lower() in {"intern","contract"}:
+        reasons.append("temporary role")
+
+    if reasons:
+        reason_text = ", ".join(reasons)
+        return f"💡 Employee {emp} shows attrition risk due to {reason_text}. Consider proactive retention actions."
+    else:
+        return f"ℹ️ Employee {emp} has elevated attrition risk, but specific drivers were not available."
+
 
 # ---------------- Database Agent ----------------
 class DatabaseAgent:
